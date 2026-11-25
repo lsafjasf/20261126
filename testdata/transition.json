@@ -1,0 +1,37 @@
+{
+  "streams": [
+    {
+      "name": "first-cut",
+      "coreRate": 24000,
+      "initial": {
+        "sbr": {"enabled": true, "outputRate": 48000},
+        "ps": {"enabled": true}
+      },
+      "frames": [
+        {
+          "config": {
+            "sbr": {"enabled": true, "outputRate": 48000},
+            "ps": {"enabled": true}
+          }
+        },
+        {},
+        {},
+        {
+          "config": {
+            "sbr": {"enabled": true, "outputRate": 48000}
+          }
+        },
+        {}
+      ]
+    },
+    {
+      "name": "second-cut",
+      "coreRate": 24000,
+      "initial": {
+        "sbr": {"enabled": true, "outputRate": 48000},
+        "ps": {"enabled": true}
+      },
+      "frames": [{}, {}, {}]
+    }
+  ]
+}
