@@ -1,0 +1,57 @@
+EDL relocation report — project promo-2026 (online v7-online)
+summary: 3 applied, 4 pending review, 2 dead
+
+== APPLIED (3) ==
+  seq 1 [trim] id_and_hash_match
+    offline: clip_id=c01 hash=162403fd7a69... path=media/intro.mov
+    online : clip_id=c01 hash=162403fd7a69... path=media/intro.mov
+    candidates:
+      - clip_id=c01 hash=162403fd7a69... path=media/intro.mov [id,hash,name]
+  seq 4 [set_note] hash_relocated_to_new_id
+    offline: clip_id=c04 hash=2167ac4e4305... path=media/product_shot.mov
+    online : clip_id=c14 hash=2167ac4e4305... path=footage/product_shot_graded.mov
+    candidates:
+      - clip_id=c14 hash=2167ac4e4305... path=footage/product_shot_graded.mov [hash]
+    ! content hash matched but the clip ID changed: c04 -> c14
+  seq 8 [move] id_and_hash_match
+    offline: clip_id=c08 hash=cb7dba48f49c... path=media/backup_take.mov
+    online : clip_id=c08 hash=cb7dba48f49c... path=media/backup_take.mov
+    candidates:
+      - clip_id=c08 hash=cb7dba48f49c... path=media/backup_take.mov [id,hash,name]
+
+== PENDING REVIEW (4) ==
+  seq 2 [move] hash_relocated_to_new_id
+    offline: clip_id=c02 hash=6e1a3d82c237... path=media/interview_a.mov
+    online : clip_id=c12 hash=6e1a3d82c237... path=media/interview_a_archive.mov
+    candidates:
+      - clip_id=c02 hash=ad190e3f35e1... path=media/interview_a_retake.mov [id]
+      - clip_id=c12 hash=6e1a3d82c237... path=media/interview_a_archive.mov [hash]
+    ! content hash matched but the clip ID changed: c02 -> c12
+    ! old clip ID c02 is now used by different content; ID reuse confirmed
+  seq 3 [trim] hash_relocated_to_new_id
+    offline: clip_id=c03 hash=25069cf8e8c8... path=media/broll_city.mp4
+    online : clip_id=c13 hash=25069cf8e8c8... path=footage/broll_city_4k.mp4
+    candidates:
+      - clip_id=c13 hash=25069cf8e8c8... path=footage/broll_city_4k.mp4 [hash]
+    ! content hash matched but the clip ID changed: c03 -> c13
+    ! file name broll_city.mp4 is also used by unrelated asset c13b with hash 18b2d61f0442...; matching by name would be wrong
+  seq 6 [move] hash_present_on_multiple_assets
+    offline: clip_id=c06 hash=251d128db110... path=media/music_bed.wav
+    candidates:
+      - clip_id=c16a hash=251d128db110... path=audio/music_bed.wav [hash,name]
+      - clip_id=c16b hash=251d128db110... path=audio/music_bed_copy.wav [hash]
+  seq 9 [set_note] offline_id_hash_pair_inconsistent
+    offline: clip_id=c01 hash=cb7dba48f49c... path=media/intro.mov
+    candidates:
+      - clip_id=c01 hash=162403fd7a69... path=media/intro.mov [id,name]
+    ! offline change list pairs clip ID c01 with a media hash that does not match the offline library
+
+== DEAD (2) ==
+  seq 5 [trim] media_hash_not_found_online
+    offline: clip_id=c05 hash=8cabbcbd8a02... path=media/ambient_park.mov
+  seq 7 [trim] media_hash_not_found_online
+    offline: clip_id=c07 hash=e68c7d3d8b75... path=media/ending_logo.mov
+    candidates:
+      - clip_id=c17 hash=70b5d9f03a4f... path=media/ending_logo.mov [name]
+    ! only file-name or clip-ID lookalikes remain; the content hash is absent, so no automatic match is allowed
+

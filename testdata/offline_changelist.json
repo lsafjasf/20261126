@@ -1,0 +1,83 @@
+{
+  "schema_version": "v3-offline",
+  "project_id": "promo-2026",
+  "based_on": "v3-offline",
+  "ops": [
+    {
+      "seq": 1,
+      "action": "trim",
+      "old_clip_id": "c01",
+      "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+      "old_path": "media/intro.mov",
+      "in_frame": 24,
+      "out_frame": 180
+    },
+    {
+      "seq": 2,
+      "action": "move",
+      "old_clip_id": "c02",
+      "media_hash": "6e1a3d82c237bd8796becf32295a24c2dd171b221d64ef70716f0c11cb700097",
+      "old_path": "media/interview_a.mov",
+      "new_track": "V2",
+      "new_start_ms": 4000
+    },
+    {
+      "seq": 3,
+      "action": "trim",
+      "old_clip_id": "c03",
+      "media_hash": "25069cf8e8c863dd7bb0c72536b6f40cf8be7870aaebfd6fc995161bcbff0547",
+      "old_path": "media/broll_city.mp4",
+      "in_frame": 10,
+      "out_frame": 240
+    },
+    {
+      "seq": 4,
+      "action": "set_note",
+      "old_clip_id": "c04",
+      "media_hash": "2167ac4e4305fe86da9edb0f6bb62696029eb332e43ce8cd055388bc856caa4c",
+      "old_path": "media/product_shot.mov",
+      "note": "hold 2 frames on hero frame"
+    },
+    {
+      "seq": 5,
+      "action": "trim",
+      "old_clip_id": "c05",
+      "media_hash": "8cabbcbd8a027a22ebd279df020b26ac162eb49f082e0f487c1f7d73dba1c3cf",
+      "old_path": "media/ambient_park.mov",
+      "out_frame": 120
+    },
+    {
+      "seq": 6,
+      "action": "move",
+      "old_clip_id": "c06",
+      "media_hash": "251d128db110168f6602e8843ecbdc6160d5c4ea17f44366e4da9ddcd60759c3",
+      "old_path": "media/music_bed.wav",
+      "new_track": "A1"
+    },
+    {
+      "seq": 7,
+      "action": "trim",
+      "old_clip_id": "c07",
+      "media_hash": "e68c7d3d8b75ebaadc33d14829f03c55ce708bb381cc0d72b3c612ce0789f31a",
+      "old_path": "media/ending_logo.mov",
+      "out_frame": 60
+    },
+    {
+      "seq": 8,
+      "action": "move",
+      "old_clip_id": "c08",
+      "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+      "old_path": "media/backup_take.mov",
+      "new_track": "V3",
+      "new_start_ms": 12000
+    },
+    {
+      "seq": 9,
+      "action": "set_note",
+      "old_clip_id": "c01",
+      "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+      "old_path": "media/intro.mov",
+      "note": "corrupted offline record"
+    }
+  ]
+}

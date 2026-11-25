@@ -1,0 +1,36 @@
+{
+  "schema_version": "v7-online",
+  "project_id": "promo-2026",
+  "source_report": "relocation-report.json",
+  "ops": [
+    {
+      "seq": 1,
+      "action": "trim",
+      "online_clip_id": "c01",
+      "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+      "online_path": "media/intro.mov",
+      "in_frame": 24,
+      "out_frame": 180,
+      "reason": "id_and_hash_match"
+    },
+    {
+      "seq": 4,
+      "action": "set_note",
+      "online_clip_id": "c14",
+      "media_hash": "2167ac4e4305fe86da9edb0f6bb62696029eb332e43ce8cd055388bc856caa4c",
+      "online_path": "footage/product_shot_graded.mov",
+      "note": "hold 2 frames on hero frame",
+      "reason": "hash_relocated_to_new_id"
+    },
+    {
+      "seq": 8,
+      "action": "move",
+      "online_clip_id": "c08",
+      "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+      "online_path": "media/backup_take.mov",
+      "new_track": "V3",
+      "new_start_ms": 12000,
+      "reason": "id_and_hash_match"
+    }
+  ]
+}

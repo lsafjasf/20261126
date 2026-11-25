@@ -1,0 +1,287 @@
+{
+  "project_id": "promo-2026",
+  "online_schema_version": "v7-online",
+  "applied": [
+    {
+      "seq": 1,
+      "action": "trim",
+      "status": "applied",
+      "reason": "id_and_hash_match",
+      "offline": {
+        "seq": 1,
+        "action": "trim",
+        "old_clip_id": "c01",
+        "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+        "old_path": "media/intro.mov",
+        "in_frame": 24,
+        "out_frame": 180
+      },
+      "candidates": [
+        {
+          "clip_id": "c01",
+          "path": "media/intro.mov",
+          "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+          "match_clip_id": true,
+          "match_media_hash": true,
+          "match_file_name": true
+        }
+      ],
+      "resolved_to": {
+        "clip_id": "c01",
+        "path": "media/intro.mov",
+        "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+        "size_bytes": 41
+      }
+    },
+    {
+      "seq": 4,
+      "action": "set_note",
+      "status": "applied",
+      "reason": "hash_relocated_to_new_id",
+      "offline": {
+        "seq": 4,
+        "action": "set_note",
+        "old_clip_id": "c04",
+        "media_hash": "2167ac4e4305fe86da9edb0f6bb62696029eb332e43ce8cd055388bc856caa4c",
+        "old_path": "media/product_shot.mov",
+        "note": "hold 2 frames on hero frame"
+      },
+      "candidates": [
+        {
+          "clip_id": "c14",
+          "path": "footage/product_shot_graded.mov",
+          "media_hash": "2167ac4e4305fe86da9edb0f6bb62696029eb332e43ce8cd055388bc856caa4c",
+          "match_clip_id": false,
+          "match_media_hash": true,
+          "match_file_name": false
+        }
+      ],
+      "resolved_to": {
+        "clip_id": "c14",
+        "path": "footage/product_shot_graded.mov",
+        "media_hash": "2167ac4e4305fe86da9edb0f6bb62696029eb332e43ce8cd055388bc856caa4c",
+        "size_bytes": 40
+      },
+      "warnings": [
+        "content hash matched but the clip ID changed: c04 -\u003e c14"
+      ]
+    },
+    {
+      "seq": 8,
+      "action": "move",
+      "status": "applied",
+      "reason": "id_and_hash_match",
+      "offline": {
+        "seq": 8,
+        "action": "move",
+        "old_clip_id": "c08",
+        "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+        "old_path": "media/backup_take.mov",
+        "new_track": "V3",
+        "new_start_ms": 12000
+      },
+      "candidates": [
+        {
+          "clip_id": "c08",
+          "path": "media/backup_take.mov",
+          "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+          "match_clip_id": true,
+          "match_media_hash": true,
+          "match_file_name": true
+        }
+      ],
+      "resolved_to": {
+        "clip_id": "c08",
+        "path": "media/backup_take.mov",
+        "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+        "size_bytes": 44
+      }
+    }
+  ],
+  "pending": [
+    {
+      "seq": 2,
+      "action": "move",
+      "status": "pending",
+      "reason": "hash_relocated_to_new_id",
+      "offline": {
+        "seq": 2,
+        "action": "move",
+        "old_clip_id": "c02",
+        "media_hash": "6e1a3d82c237bd8796becf32295a24c2dd171b221d64ef70716f0c11cb700097",
+        "old_path": "media/interview_a.mov",
+        "new_track": "V2",
+        "new_start_ms": 4000
+      },
+      "candidates": [
+        {
+          "clip_id": "c02",
+          "path": "media/interview_a_retake.mov",
+          "media_hash": "ad190e3f35e1255ab9ccb47ffe735b9a4200b1298b1cc3ac9f5fd6949682ea37",
+          "match_clip_id": true,
+          "match_media_hash": false,
+          "match_file_name": false
+        },
+        {
+          "clip_id": "c12",
+          "path": "media/interview_a_archive.mov",
+          "media_hash": "6e1a3d82c237bd8796becf32295a24c2dd171b221d64ef70716f0c11cb700097",
+          "match_clip_id": false,
+          "match_media_hash": true,
+          "match_file_name": false
+        }
+      ],
+      "resolved_to": {
+        "clip_id": "c12",
+        "path": "media/interview_a_archive.mov",
+        "media_hash": "6e1a3d82c237bd8796becf32295a24c2dd171b221d64ef70716f0c11cb700097",
+        "size_bytes": 44
+      },
+      "warnings": [
+        "content hash matched but the clip ID changed: c02 -\u003e c12",
+        "old clip ID c02 is now used by different content; ID reuse confirmed"
+      ]
+    },
+    {
+      "seq": 3,
+      "action": "trim",
+      "status": "pending",
+      "reason": "hash_relocated_to_new_id",
+      "offline": {
+        "seq": 3,
+        "action": "trim",
+        "old_clip_id": "c03",
+        "media_hash": "25069cf8e8c863dd7bb0c72536b6f40cf8be7870aaebfd6fc995161bcbff0547",
+        "old_path": "media/broll_city.mp4",
+        "in_frame": 10,
+        "out_frame": 240
+      },
+      "candidates": [
+        {
+          "clip_id": "c13",
+          "path": "footage/broll_city_4k.mp4",
+          "media_hash": "25069cf8e8c863dd7bb0c72536b6f40cf8be7870aaebfd6fc995161bcbff0547",
+          "match_clip_id": false,
+          "match_media_hash": true,
+          "match_file_name": false
+        }
+      ],
+      "resolved_to": {
+        "clip_id": "c13",
+        "path": "footage/broll_city_4k.mp4",
+        "media_hash": "25069cf8e8c863dd7bb0c72536b6f40cf8be7870aaebfd6fc995161bcbff0547",
+        "size_bytes": 43
+      },
+      "warnings": [
+        "content hash matched but the clip ID changed: c03 -\u003e c13",
+        "file name broll_city.mp4 is also used by unrelated asset c13b with hash 18b2d61f0442...; matching by name would be wrong"
+      ]
+    },
+    {
+      "seq": 6,
+      "action": "move",
+      "status": "pending",
+      "reason": "hash_present_on_multiple_assets",
+      "offline": {
+        "seq": 6,
+        "action": "move",
+        "old_clip_id": "c06",
+        "media_hash": "251d128db110168f6602e8843ecbdc6160d5c4ea17f44366e4da9ddcd60759c3",
+        "old_path": "media/music_bed.wav",
+        "new_track": "A1"
+      },
+      "candidates": [
+        {
+          "clip_id": "c16a",
+          "path": "audio/music_bed.wav",
+          "media_hash": "251d128db110168f6602e8843ecbdc6160d5c4ea17f44366e4da9ddcd60759c3",
+          "match_clip_id": false,
+          "match_media_hash": true,
+          "match_file_name": true
+        },
+        {
+          "clip_id": "c16b",
+          "path": "audio/music_bed_copy.wav",
+          "media_hash": "251d128db110168f6602e8843ecbdc6160d5c4ea17f44366e4da9ddcd60759c3",
+          "match_clip_id": false,
+          "match_media_hash": true,
+          "match_file_name": false
+        }
+      ]
+    },
+    {
+      "seq": 9,
+      "action": "set_note",
+      "status": "pending",
+      "reason": "offline_id_hash_pair_inconsistent",
+      "offline": {
+        "seq": 9,
+        "action": "set_note",
+        "old_clip_id": "c01",
+        "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+        "old_path": "media/intro.mov",
+        "note": "corrupted offline record"
+      },
+      "candidates": [
+        {
+          "clip_id": "c01",
+          "path": "media/intro.mov",
+          "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+          "match_clip_id": true,
+          "match_media_hash": false,
+          "match_file_name": true
+        }
+      ],
+      "warnings": [
+        "offline change list pairs clip ID c01 with a media hash that does not match the offline library"
+      ]
+    }
+  ],
+  "dead": [
+    {
+      "seq": 5,
+      "action": "trim",
+      "status": "dead",
+      "reason": "media_hash_not_found_online",
+      "offline": {
+        "seq": 5,
+        "action": "trim",
+        "old_clip_id": "c05",
+        "media_hash": "8cabbcbd8a027a22ebd279df020b26ac162eb49f082e0f487c1f7d73dba1c3cf",
+        "old_path": "media/ambient_park.mov",
+        "out_frame": 120
+      },
+      "candidates": []
+    },
+    {
+      "seq": 7,
+      "action": "trim",
+      "status": "dead",
+      "reason": "media_hash_not_found_online",
+      "offline": {
+        "seq": 7,
+        "action": "trim",
+        "old_clip_id": "c07",
+        "media_hash": "e68c7d3d8b75ebaadc33d14829f03c55ce708bb381cc0d72b3c612ce0789f31a",
+        "old_path": "media/ending_logo.mov",
+        "out_frame": 60
+      },
+      "candidates": [
+        {
+          "clip_id": "c17",
+          "path": "media/ending_logo.mov",
+          "media_hash": "70b5d9f03a4fd43d1a533eb598ac35d95428c071c3abe096eba064dff57ae612",
+          "match_clip_id": false,
+          "match_media_hash": false,
+          "match_file_name": true
+        }
+      ],
+      "warnings": [
+        "only file-name or clip-ID lookalikes remain; the content hash is absent, so no automatic match is allowed"
+      ]
+    }
+  ],
+  "applied_count": 3,
+  "pending_count": 4,
+  "dead_count": 2
+}

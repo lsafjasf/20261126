@@ -1,0 +1,66 @@
+{
+  "schema_version": "v7-online",
+  "project_id": "promo-2026",
+  "assets": [
+    {
+      "clip_id": "c01",
+      "path": "media/intro.mov",
+      "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+      "size_bytes": 41
+    },
+    {
+      "clip_id": "c02",
+      "path": "media/interview_a_retake.mov",
+      "media_hash": "ad190e3f35e1255ab9ccb47ffe735b9a4200b1298b1cc3ac9f5fd6949682ea37",
+      "size_bytes": 51
+    },
+    {
+      "clip_id": "c12",
+      "path": "media/interview_a_archive.mov",
+      "media_hash": "6e1a3d82c237bd8796becf32295a24c2dd171b221d64ef70716f0c11cb700097",
+      "size_bytes": 44
+    },
+    {
+      "clip_id": "c13",
+      "path": "footage/broll_city_4k.mp4",
+      "media_hash": "25069cf8e8c863dd7bb0c72536b6f40cf8be7870aaebfd6fc995161bcbff0547",
+      "size_bytes": 43
+    },
+    {
+      "clip_id": "c13b",
+      "path": "media/broll_city.mp4",
+      "media_hash": "18b2d61f044252e97acc16a7176c61d2524b03aadbe2d9d4334a2726a1fc6c1b",
+      "size_bytes": 51
+    },
+    {
+      "clip_id": "c14",
+      "path": "footage/product_shot_graded.mov",
+      "media_hash": "2167ac4e4305fe86da9edb0f6bb62696029eb332e43ce8cd055388bc856caa4c",
+      "size_bytes": 40
+    },
+    {
+      "clip_id": "c16a",
+      "path": "audio/music_bed.wav",
+      "media_hash": "251d128db110168f6602e8843ecbdc6160d5c4ea17f44366e4da9ddcd60759c3",
+      "size_bytes": 42
+    },
+    {
+      "clip_id": "c16b",
+      "path": "audio/music_bed_copy.wav",
+      "media_hash": "251d128db110168f6602e8843ecbdc6160d5c4ea17f44366e4da9ddcd60759c3",
+      "size_bytes": 42
+    },
+    {
+      "clip_id": "c17",
+      "path": "media/ending_logo.mov",
+      "media_hash": "70b5d9f03a4fd43d1a533eb598ac35d95428c071c3abe096eba064dff57ae612",
+      "size_bytes": 46
+    },
+    {
+      "clip_id": "c08",
+      "path": "media/backup_take.mov",
+      "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+      "size_bytes": 44
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "v3-offline",
+  "project_id": "promo-2026",
+  "assets": [
+    {
+      "clip_id": "c01",
+      "path": "media/intro.mov",
+      "media_hash": "162403fd7a692757f0b88c8c6aaae79b6bd962618cf4a694c3e84f797510a7fe",
+      "size_bytes": 41
+    },
+    {
+      "clip_id": "c02",
+      "path": "media/interview_a.mov",
+      "media_hash": "6e1a3d82c237bd8796becf32295a24c2dd171b221d64ef70716f0c11cb700097",
+      "size_bytes": 44
+    },
+    {
+      "clip_id": "c03",
+      "path": "media/broll_city.mp4",
+      "media_hash": "25069cf8e8c863dd7bb0c72536b6f40cf8be7870aaebfd6fc995161bcbff0547",
+      "size_bytes": 43
+    },
+    {
+      "clip_id": "c04",
+      "path": "media/product_shot.mov",
+      "media_hash": "2167ac4e4305fe86da9edb0f6bb62696029eb332e43ce8cd055388bc856caa4c",
+      "size_bytes": 40
+    },
+    {
+      "clip_id": "c05",
+      "path": "media/ambient_park.mov",
+      "media_hash": "8cabbcbd8a027a22ebd279df020b26ac162eb49f082e0f487c1f7d73dba1c3cf",
+      "size_bytes": 37
+    },
+    {
+      "clip_id": "c06",
+      "path": "media/music_bed.wav",
+      "media_hash": "251d128db110168f6602e8843ecbdc6160d5c4ea17f44366e4da9ddcd60759c3",
+      "size_bytes": 42
+    },
+    {
+      "clip_id": "c07",
+      "path": "media/ending_logo.mov",
+      "media_hash": "e68c7d3d8b75ebaadc33d14829f03c55ce708bb381cc0d72b3c612ce0789f31a",
+      "size_bytes": 37
+    },
+    {
+      "clip_id": "c08",
+      "path": "media/backup_take.mov",
+      "media_hash": "cb7dba48f49ca94f36936dd224dbfb31683cfe407ad08c0533ae0ec046ba7a0a",
+      "size_bytes": 44
+    }
+  ]
+}
