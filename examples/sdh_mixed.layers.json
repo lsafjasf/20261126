@@ -1,0 +1,61 @@
+{
+  "cue_count": 10,
+  "entry_count": 19,
+  "layers": [
+    {
+      "role": "dialogue",
+      "label": "对白",
+      "count": 5,
+      "anchor": "bottom",
+      "vocal": true
+    },
+    {
+      "role": "voiceover",
+      "label": "画外音",
+      "count": 2,
+      "anchor": "bottom",
+      "vocal": true
+    },
+    {
+      "role": "lyric",
+      "label": "歌词",
+      "count": 2,
+      "anchor": "bottom",
+      "vocal": true
+    },
+    {
+      "role": "speaker",
+      "label": "说话人",
+      "count": 5,
+      "anchor": "bottom",
+      "vocal": false
+    },
+    {
+      "role": "sound",
+      "label": "环境声",
+      "count": 4,
+      "anchor": "top",
+      "vocal": false
+    },
+    {
+      "role": "music",
+      "label": "音乐描述",
+      "count": 1,
+      "anchor": "top",
+      "vocal": false
+    }
+  ],
+  "overlap_groups": 4,
+  "max_lanes": {
+    "bottom": 4,
+    "top": 2
+  },
+  "plain_cue_count": 7,
+  "completeness": {
+    "complete": true,
+    "source_cues": 10,
+    "plain_cue_count": 7,
+    "vocal_units": 9,
+    "matched": 9
+  }
+}
