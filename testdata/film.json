@@ -1,0 +1,46 @@
+{
+  "project_id": "film-001",
+  "title": "多语版影片",
+  "tracks": [
+    {
+      "track_id": "dx-zh",
+      "track_name": "A1 Dialogue 对白",
+      "track_role": "audio",
+      "language_code": "zh_cn",
+      "is_default": true,
+      "is_muted": false
+    },
+    {
+      "track_id": "mx",
+      "track_name": "A2 Music 配乐",
+      "track_role": "audio"
+    },
+    {
+      "track_id": "sfx",
+      "track_name": "A3 SFX 音效",
+      "track_role": "audio",
+      "audible": false
+    },
+    {
+      "track_id": "dub-en-51",
+      "track_name": "English Dub 5.1",
+      "track_role": "audio",
+      "language": "en_US",
+      "default": true
+    },
+    {
+      "track_id": "dub-en-stereo",
+      "track_name": "English Dub Stereo",
+      "track_role": "audio",
+      "language": "en_US",
+      "default": false
+    },
+    {
+      "track_id": "dub-ja",
+      "track_name": "日本語配音",
+      "track_role": "audio",
+      "language": "ja_jp",
+      "default": true
+    }
+  ]
+}

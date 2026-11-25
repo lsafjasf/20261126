@@ -1,0 +1,19 @@
+{
+  "projectId": "film-002",
+  "tracks": [
+    {
+      "id": "en-main",
+      "name": "English Dialogue",
+      "role": "audio",
+      "language": "en_US",
+      "default": true
+    },
+    {
+      "id": "en-alt",
+      "name": "English Dub",
+      "role": "audio",
+      "language": "EN-us",
+      "default": true
+    }
+  ]
+}
