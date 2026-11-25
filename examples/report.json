@@ -1,0 +1,711 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "confidence_threshold": 0.8,
+  "summary": {
+    "cues": 4,
+    "safe": 0,
+    "violations": 2,
+    "suspected": 1,
+    "indeterminate": 1,
+    "with_auto_plan": 2,
+    "migrations_blocked_low_confidence": 1
+  },
+  "findings": [
+    {
+      "cue_id": "c-wide",
+      "time": {
+        "start": 1,
+        "end": 3.5
+      },
+      "box": {
+        "x": 108,
+        "y": 850.6,
+        "width": 1704,
+        "height": 129.4
+      },
+      "status": "violation",
+      "geometric_violation": true,
+      "gate": {
+        "threshold": 0.8,
+        "min_confidence": 0.95,
+        "confidence_known": true,
+        "full_coverage": true,
+        "trusted": true,
+        "auto_allowed": true,
+        "migration_allowed": true
+      },
+      "segments": [
+        {
+          "start": 1,
+          "end": 3.5,
+          "span_ids": [
+            "cam-wide"
+          ],
+          "covered": true,
+          "trusted": true,
+          "confidence": 0.95,
+          "confidence_known": true,
+          "safe_rect": {
+            "x": 120,
+            "y": 120,
+            "width": 1680,
+            "height": 860
+          },
+          "intersection": {
+            "x": 120,
+            "y": 850.6,
+            "width": 1680,
+            "height": 129.39999999999998
+          },
+          "overflow": {
+            "left": 12,
+            "right": 12,
+            "top": 0,
+            "bottom": 0
+          },
+          "intersection_ratio": 0.9859154929577463,
+          "inside": false
+        }
+      ],
+      "common_safe_rect": {
+        "x": 120,
+        "y": 120,
+        "width": 1680,
+        "height": 860
+      },
+      "plans": [
+        {
+          "id": "c-wide-rewrap",
+          "cue_id": "c-wide",
+          "action": "rewrap",
+          "feasible": true,
+          "auto_eligible": true,
+          "recommended": true,
+          "confidence": 0.95,
+          "summary": "重新拆行即可让整条 cue 落入动态安全区",
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.95,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          },
+          "text": "请注意：安全区并不是整条视频共用的固定矩形，它会随着镜头运动在不同时间段里改变\n位置与宽度。",
+          "lines": [
+            "请注意：安全区并不是整条视频共用的固定矩形，它会随着镜头运动在不同时间段里改变",
+            "位置与宽度。"
+          ],
+          "box": {
+            "x": 129,
+            "y": 850,
+            "width": 1662,
+            "height": 130
+          }
+        },
+        {
+          "id": "c-wide-shorten",
+          "cue_id": "c-wide",
+          "action": "shorten",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0.95,
+          "summary": "无需缩短即可容纳",
+          "reasons": [
+            "shorten_no_change"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.95,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          },
+          "content_loss": true
+        },
+        {
+          "id": "c-wide-migrate",
+          "cue_id": "c-wide",
+          "action": "migrate",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0.95,
+          "summary": "cue 框比公共安全区更大，原样迁移无法放入",
+          "reasons": [
+            "box_larger_than_safe_rect",
+            "consider_rewrap_or_shorten"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.95,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          },
+          "box": {
+            "x": 108,
+            "y": 850.6,
+            "width": 1704,
+            "height": 129.4
+          }
+        },
+        {
+          "id": "c-wide-time_split",
+          "cue_id": "c-wide",
+          "action": "time_split",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0.95,
+          "summary": "某些时段的安全区比 cue 框更小，需先拆行/缩短",
+          "reasons": [
+            "box_larger_than_segment_rect"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.95,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          }
+        }
+      ],
+      "recommended_plan_id": "c-wide-rewrap"
+    },
+    {
+      "cue_id": "c-closeup",
+      "time": {
+        "start": 4.6,
+        "end": 7.4
+      },
+      "box": {
+        "x": 300,
+        "y": 830,
+        "width": 620,
+        "height": 80
+      },
+      "status": "violation",
+      "geometric_violation": true,
+      "gate": {
+        "threshold": 0.8,
+        "min_confidence": 0.92,
+        "confidence_known": true,
+        "full_coverage": true,
+        "trusted": true,
+        "auto_allowed": true,
+        "migration_allowed": true
+      },
+      "segments": [
+        {
+          "start": 4.6,
+          "end": 7.4,
+          "span_ids": [
+            "cam-closeup"
+          ],
+          "covered": true,
+          "trusted": true,
+          "confidence": 0.92,
+          "confidence_known": true,
+          "safe_rect": {
+            "x": 420,
+            "y": 200,
+            "width": 1080,
+            "height": 700
+          },
+          "intersection": {
+            "x": 420,
+            "y": 830,
+            "width": 500,
+            "height": 70
+          },
+          "overflow": {
+            "left": 120,
+            "right": 0,
+            "top": 0,
+            "bottom": 10
+          },
+          "intersection_ratio": 0.7056451612903226,
+          "inside": false
+        }
+      ],
+      "common_safe_rect": {
+        "x": 420,
+        "y": 200,
+        "width": 1080,
+        "height": 700
+      },
+      "plans": [
+        {
+          "id": "c-closeup-rewrap",
+          "cue_id": "c-closeup",
+          "action": "rewrap",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0.92,
+          "summary": "当前换行已等于安全宽度，纯拆行无改善",
+          "reasons": [
+            "rewrap_no_change"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.92,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          },
+          "text": "特写镜头",
+          "lines": [
+            "特写镜头"
+          ]
+        },
+        {
+          "id": "c-closeup-shorten",
+          "cue_id": "c-closeup",
+          "action": "shorten",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0.92,
+          "summary": "无需缩短即可容纳",
+          "reasons": [
+            "shorten_no_change"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.92,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          },
+          "content_loss": true
+        },
+        {
+          "id": "c-closeup-migrate",
+          "cue_id": "c-closeup",
+          "action": "migrate",
+          "feasible": true,
+          "auto_eligible": true,
+          "recommended": true,
+          "confidence": 0.92,
+          "summary": "保持字号与排版不变，最小距离迁移到全程公共安全区",
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.92,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          },
+          "box": {
+            "x": 420,
+            "y": 820,
+            "width": 620,
+            "height": 80
+          },
+          "move": {
+            "dx": 120,
+            "dy": -10
+          }
+        },
+        {
+          "id": "c-closeup-time_split",
+          "cue_id": "c-closeup",
+          "action": "time_split",
+          "feasible": true,
+          "auto_eligible": true,
+          "confidence": 0.92,
+          "summary": "镜头移动导致安全区漂移：按区间拆分 cue 并逐段迁移",
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.92,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": true,
+            "auto_allowed": true,
+            "migration_allowed": true
+          },
+          "segments": [
+            {
+              "start": 4.6,
+              "end": 7.4,
+              "rect": {
+                "x": 420,
+                "y": 820,
+                "width": 620,
+                "height": 80
+              },
+              "dx": 120,
+              "dy": -10
+            }
+          ]
+        }
+      ],
+      "recommended_plan_id": "c-closeup-migrate"
+    },
+    {
+      "cue_id": "c-lowconf",
+      "time": {
+        "start": 8.6,
+        "end": 11.2
+      },
+      "box": {
+        "x": 100,
+        "y": 860,
+        "width": 1680,
+        "height": 110
+      },
+      "status": "suspected",
+      "geometric_violation": true,
+      "gate": {
+        "threshold": 0.8,
+        "min_confidence": 0.55,
+        "confidence_known": true,
+        "full_coverage": true,
+        "trusted": false,
+        "auto_allowed": false,
+        "migration_allowed": false,
+        "block_reasons": [
+          "low_confidence"
+        ]
+      },
+      "segments": [
+        {
+          "start": 8.6,
+          "end": 11.2,
+          "span_ids": [
+            "cam-reacquire"
+          ],
+          "covered": true,
+          "trusted": false,
+          "confidence": 0.55,
+          "confidence_known": true,
+          "safe_rect": {
+            "x": 120,
+            "y": 120,
+            "width": 1680,
+            "height": 860
+          },
+          "intersection": {
+            "x": 120,
+            "y": 860,
+            "width": 1660,
+            "height": 110
+          },
+          "overflow": {
+            "left": 20,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "intersection_ratio": 0.9880952380952381,
+          "inside": false
+        }
+      ],
+      "common_safe_rect": {
+        "x": 120,
+        "y": 120,
+        "width": 1680,
+        "height": 860
+      },
+      "plans": [
+        {
+          "id": "c-lowconf-rewrap",
+          "cue_id": "c-lowconf",
+          "action": "rewrap",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0.55,
+          "summary": "当前换行已等于安全宽度，纯拆行无改善",
+          "reasons": [
+            "rewrap_no_change"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.55,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "low_confidence"
+            ]
+          },
+          "text": "Tracking is reacquiring, confidence low.",
+          "lines": [
+            "Tracking is reacquiring, confidence low."
+          ]
+        },
+        {
+          "id": "c-lowconf-shorten",
+          "cue_id": "c-lowconf",
+          "action": "shorten",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0.55,
+          "summary": "无需缩短即可容纳",
+          "reasons": [
+            "shorten_no_change"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.55,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "low_confidence"
+            ]
+          },
+          "content_loss": true
+        },
+        {
+          "id": "c-lowconf-migrate",
+          "cue_id": "c-lowconf",
+          "action": "migrate",
+          "feasible": true,
+          "auto_eligible": false,
+          "recommended": true,
+          "confidence": 0.55,
+          "summary": "检测到越界，但安全区置信度不足/覆盖不全：仅给出迁移坐标，禁止自动移动",
+          "reasons": [
+            "not_auto:migration_requires_trusted_safe_area"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.55,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "low_confidence"
+            ]
+          },
+          "box": {
+            "x": 120,
+            "y": 860,
+            "width": 1680,
+            "height": 110
+          },
+          "move": {
+            "dx": 20,
+            "dy": 0
+          }
+        },
+        {
+          "id": "c-lowconf-time_split",
+          "cue_id": "c-lowconf",
+          "action": "time_split",
+          "feasible": true,
+          "auto_eligible": false,
+          "confidence": 0.55,
+          "summary": "可按区间拆分迁移，但安全区置信度不足/覆盖不全：仅输出分段坐标，禁止自动移动",
+          "reasons": [
+            "not_auto:migration_requires_trusted_safe_area"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0.55,
+            "confidence_known": true,
+            "full_coverage": true,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "low_confidence"
+            ]
+          },
+          "segments": [
+            {
+              "start": 8.6,
+              "end": 11.2,
+              "rect": {
+                "x": 120,
+                "y": 860,
+                "width": 1680,
+                "height": 110
+              },
+              "dx": 20,
+              "dy": 0
+            }
+          ]
+        }
+      ],
+      "recommended_plan_id": "c-lowconf-migrate"
+    },
+    {
+      "cue_id": "c-gap",
+      "time": {
+        "start": 12.4,
+        "end": 13.4
+      },
+      "box": {
+        "x": 140,
+        "y": 880,
+        "width": 1640,
+        "height": 96
+      },
+      "status": "indeterminate",
+      "geometric_violation": false,
+      "gate": {
+        "threshold": 0.8,
+        "min_confidence": 0,
+        "confidence_known": false,
+        "full_coverage": false,
+        "trusted": false,
+        "auto_allowed": false,
+        "migration_allowed": false,
+        "block_reasons": [
+          "coverage_gap"
+        ]
+      },
+      "segments": [
+        {
+          "start": 12.4,
+          "end": 13.4,
+          "covered": false,
+          "trusted": false,
+          "confidence": 0,
+          "confidence_known": false,
+          "safe_rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "intersection": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0
+          },
+          "intersection_ratio": 0,
+          "inside": false
+        }
+      ],
+      "plans": [
+        {
+          "id": "c-gap-rewrap",
+          "cue_id": "c-gap",
+          "action": "rewrap",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0,
+          "summary": "缺少覆盖整个 cue 时段的公共安全矩形，无法给出拆行方案",
+          "reasons": [
+            "no_common_safe_rect"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0,
+            "confidence_known": false,
+            "full_coverage": false,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "coverage_gap"
+            ]
+          }
+        },
+        {
+          "id": "c-gap-shorten",
+          "cue_id": "c-gap",
+          "action": "shorten",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0,
+          "summary": "缺少覆盖整个 cue 时段的公共安全矩形，无法评估缩短",
+          "reasons": [
+            "no_common_safe_rect"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0,
+            "confidence_known": false,
+            "full_coverage": false,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "coverage_gap"
+            ]
+          },
+          "content_loss": true
+        },
+        {
+          "id": "c-gap-migrate",
+          "cue_id": "c-gap",
+          "action": "migrate",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0,
+          "summary": "安全区在 cue 时段内没有公共矩形，单次迁移无法覆盖全程",
+          "reasons": [
+            "no_common_safe_rect",
+            "consider_time_split"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0,
+            "confidence_known": false,
+            "full_coverage": false,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "coverage_gap"
+            ]
+          }
+        },
+        {
+          "id": "c-gap-time_split",
+          "cue_id": "c-gap",
+          "action": "time_split",
+          "feasible": false,
+          "auto_eligible": false,
+          "confidence": 0,
+          "summary": "cue 时段存在安全区覆盖空洞，无法分段迁移",
+          "reasons": [
+            "coverage_gap"
+          ],
+          "gate": {
+            "threshold": 0.8,
+            "min_confidence": 0,
+            "confidence_known": false,
+            "full_coverage": false,
+            "trusted": false,
+            "auto_allowed": false,
+            "migration_allowed": false,
+            "block_reasons": [
+              "coverage_gap"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "canvas": { "width": 1920, "height": 1080 },
+  "unit": "pixel",
+  "confidence_threshold": 0.8,
+  "safe_areas": [
+    {
+      "id": "cam-wide",
+      "start": 0.0,
+      "end": 4.0,
+      "rect": { "x": 120, "y": 120, "width": 1680, "height": 860 },
+      "confidence": 0.95,
+      "source": "camera-track/wide-shot"
+    },
+    {
+      "id": "cam-closeup",
+      "start": 4.0,
+      "end": 8.0,
+      "rect": { "x": 420, "y": 200, "width": 1080, "height": 700 },
+      "confidence": 0.92,
+      "source": "camera-track/close-up"
+    },
+    {
+      "id": "cam-reacquire",
+      "start": 8.0,
+      "end": 12.0,
+      "rect": { "x": 120, "y": 120, "width": 1680, "height": 860 },
+      "confidence": 0.55,
+      "source": "camera-track/reacquiring"
+    }
+  ]
+}

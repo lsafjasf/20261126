@@ -1,0 +1,4 @@
+id,start,end,x,y,width,height,confidence,source
+cam-wide,0,4,120,120,1680,860,0.95,camera-track/wide-shot
+cam-closeup,4,8,420,200,1080,700,0.92,camera-track/close-up
+cam-reacquire,8,12,120,120,1680,860,0.55,camera-track/reacquiring

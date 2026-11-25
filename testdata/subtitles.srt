@@ -1,0 +1,12 @@
+1
+00:00:01,000 --> 00:00:03,500
+动态安全区会随镜头移动而变化，不能把整条视频当成同一个矩形。
+
+2
+00:00:04,600 --> 00:00:07,400
+The close-up reframes the safe area.
+
+3
+00:00:08,600 --> 00:00:11,200
+Low confidence tracking must not move cues automatically.
+

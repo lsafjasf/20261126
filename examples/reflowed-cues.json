@@ -1,0 +1,68 @@
+{
+  "format": "json",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "style": {
+    "font_size": 42,
+    "line_height": 1.35,
+    "padding_x": 12,
+    "padding_y": 8,
+    "max_lines": 3,
+    "alignment": "bottom-center",
+    "margin_x": 96,
+    "margin_y": 100
+  },
+  "cues": [
+    {
+      "id": "c-wide",
+      "start": 1,
+      "end": 3.5,
+      "text": "请注意：安全区并不是整条视频共用的固定矩形，它会随着镜头运动在不同时间段里改变\n位置与宽度。",
+      "box": {
+        "x": 129,
+        "y": 850,
+        "width": 1662,
+        "height": 130
+      }
+    },
+    {
+      "id": "c-closeup",
+      "start": 4.6,
+      "end": 7.4,
+      "text": "特写镜头",
+      "box": {
+        "x": 420,
+        "y": 820,
+        "width": 620,
+        "height": 80
+      },
+      "alignment": "bottom-center"
+    },
+    {
+      "id": "c-lowconf",
+      "start": 8.6,
+      "end": 11.2,
+      "text": "Tracking is reacquiring, confidence low.",
+      "box": {
+        "x": 100,
+        "y": 860,
+        "width": 1680,
+        "height": 110
+      }
+    },
+    {
+      "id": "c-gap",
+      "start": 12.4,
+      "end": 13.4,
+      "text": "No safe-area coverage for this interval.",
+      "box": {
+        "x": 140,
+        "y": 880,
+        "width": 1640,
+        "height": 96
+      }
+    }
+  ]
+}

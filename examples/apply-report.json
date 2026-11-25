@@ -1,0 +1,25 @@
+{
+  "applied": [
+    {
+      "cue_id": "c-wide",
+      "plan_id": "c-wide-rewrap",
+      "action": "rewrap",
+      "mode": "auto",
+      "summary": "重新拆行即可让整条 cue 落入动态安全区"
+    },
+    {
+      "cue_id": "c-closeup",
+      "plan_id": "c-closeup-migrate",
+      "action": "migrate",
+      "mode": "auto",
+      "summary": "保持字号与排版不变，最小距离迁移到全程公共安全区"
+    }
+  ],
+  "blocked": [
+    {
+      "cue_id": "c-lowconf",
+      "plan_id": "c-lowconf-migrate",
+      "reason": "low_confidence_move_not_automatic"
+    }
+  ]
+}
