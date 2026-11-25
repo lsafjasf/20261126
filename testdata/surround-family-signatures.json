@@ -1,0 +1,12 @@
+{
+  "name": "surround-family-test",
+  "description": "BL and BR intentionally share one feature profile, making left/right identity undecidable.",
+  "roles": {
+    "FL": {"frequency_hz": 320, "frequency_tolerance_hz": 18, "min_rms": 0.02},
+    "FR": {"frequency_hz": 400, "frequency_tolerance_hz": 18, "min_rms": 0.02},
+    "FC": {"frequency_hz": 1000, "frequency_tolerance_hz": 24, "min_rms": 0.02},
+    "LFE": {"frequency_hz": 70, "frequency_tolerance_hz": 14, "max_frequency_hz": 120, "min_low_band_ratio": 0.7, "min_rms": 0.02},
+    "BL": {"frequency_hz": 580, "frequency_tolerance_hz": 25, "min_rms": 0.02},
+    "BR": {"frequency_hz": 580, "frequency_tolerance_hz": 25, "min_rms": 0.02}
+  }
+}
