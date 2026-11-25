@@ -1,0 +1,27 @@
+{
+  "sequence_bounds": {"start": 0, "end": 30},
+  "clips": [
+    {
+      "id": "a",
+      "media": {"start": 0, "end": 24},
+      "source_range": {"start": 6, "end": 12},
+      "sequence_range": {"start": 0, "end": 10}
+    },
+    {
+      "id": "b",
+      "media": {"start": 0, "end": 30},
+      "source_range": {"start": 14, "end": 14},
+      "sequence_range": {"start": 10, "end": 20}
+    },
+    {
+      "id": "c",
+      "media": {"start": 0, "end": 20},
+      "source_range": {"start": 7, "end": 14},
+      "sequence_range": {"start": 20, "end": 30}
+    }
+  ],
+  "transitions": [
+    {"id": "t1", "left_clip_id": "a", "right_clip_id": "b", "cut": 10, "head_frames": 4, "tail_frames": 4},
+    {"id": "t2", "left_clip_id": "b", "right_clip_id": "c", "cut": 20, "head_frames": 3, "tail_frames": 6}
+  ]
+}
