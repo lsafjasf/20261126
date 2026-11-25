@@ -1,0 +1,13 @@
+{
+  "source": { "id": "media-1", "duration": 10000, "minTimelineDuration": 100 },
+  "base": {
+    "id": "clip-1", "sourceId": "media-1", "revision": 7,
+    "inPoint": 1000, "outPoint": 9000,
+    "speed": { "numerator": 1, "denominator": 1 }
+  },
+  "edits": [
+    { "id": "edit-in-a", "clientId": "client-a", "baseRevision": 7, "property": "inPoint", "value": 8000 },
+    { "id": "edit-out-b", "clientId": "client-b", "baseRevision": 7, "property": "outPoint", "value": 8100 },
+    { "id": "edit-speed-a", "clientId": "client-a", "baseRevision": 7, "property": "speed", "value": { "numerator": 5, "denominator": 1 } }
+  ]
+}

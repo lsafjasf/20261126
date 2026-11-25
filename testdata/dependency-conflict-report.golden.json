@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "clip-merge/v1",
+  "reportId": "sha256:85f8c295b578a5752dbf1acf24a3b4230d4dff02528aef6a1ed3723f09be16b8",
+  "status": "conflict",
+  "conflict": true,
+  "clipId": "clip-1",
+  "sourceId": "media-1",
+  "baseRevision": 7,
+  "timeUnit": "ms",
+  "source": {
+    "id": "media-1",
+    "duration": 10000,
+    "minTimelineDuration": 100
+  },
+  "base": {
+    "id": "clip-1",
+    "sourceId": "media-1",
+    "revision": 7,
+    "inPoint": 1000,
+    "outPoint": 9000,
+    "speed": {
+      "numerator": 1,
+      "denominator": 1
+    },
+    "sourceSpan": 8000,
+    "timelineDuration": {
+      "numerator": 8000,
+      "denominator": 1
+    }
+  },
+  "edits": [
+    {
+      "id": "edit-in-a",
+      "clientId": "client-a",
+      "baseRevision": 7,
+      "property": "inPoint",
+      "value": 8000,
+      "disposition": "property_resolved"
+    },
+    {
+      "id": "edit-out-b",
+      "clientId": "client-b",
+      "baseRevision": 7,
+      "property": "outPoint",
+      "value": 8100,
+      "disposition": "property_resolved"
+    },
+    {
+      "id": "edit-speed-a",
+      "clientId": "client-a",
+      "baseRevision": 7,
+      "property": "speed",
+      "value": {
+        "numerator": 5,
+        "denominator": 1
+      },
+      "disposition": "property_resolved"
+    }
+  ],
+  "ignoredEdits": [],
+  "propertyResolutions": [
+    {
+      "property": "inPoint",
+      "baseValue": 1000,
+      "candidates": [
+        {
+          "value": 8000,
+          "editIds": [
+            "edit-in-a"
+          ],
+          "clientIds": [
+            "client-a"
+          ]
+        }
+      ],
+      "effectiveValue": 8000,
+      "state": "resolved"
+    },
+    {
+      "property": "outPoint",
+      "baseValue": 9000,
+      "candidates": [
+        {
+          "value": 8100,
+          "editIds": [
+            "edit-out-b"
+          ],
+          "clientIds": [
+            "client-b"
+          ]
+        }
+      ],
+      "effectiveValue": 8100,
+      "state": "resolved"
+    },
+    {
+      "property": "speed",
+      "baseValue": {
+        "numerator": 1,
+        "denominator": 1
+      },
+      "candidates": [
+        {
+          "value": {
+            "numerator": 5,
+            "denominator": 1
+          },
+          "editIds": [
+            "edit-speed-a"
+          ],
+          "clientIds": [
+            "client-a"
+          ]
+        }
+      ],
+      "effectiveValue": {
+        "numerator": 5,
+        "denominator": 1
+      },
+      "state": "resolved"
+    }
+  ],
+  "checks": [
+    {
+      "name": "source_in_bounds",
+      "properties": [
+        "inPoint"
+      ],
+      "rule": "source in-point must lie inside the media",
+      "status": "pass",
+      "observed": "inPoint=8000",
+      "expected": "0 <= inPoint <= 10000",
+      "message": "constraint satisfied"
+    },
+    {
+      "name": "source_out_bounds",
+      "properties": [
+        "outPoint"
+      ],
+      "rule": "source out-point must lie inside the media",
+      "status": "pass",
+      "observed": "outPoint=8100",
+      "expected": "0 <= outPoint <= 10000",
+      "message": "constraint satisfied"
+    },
+    {
+      "name": "source_interval_order",
+      "properties": [
+        "inPoint",
+        "outPoint"
+      ],
+      "rule": "source in-point must precede source out-point",
+      "status": "pass",
+      "observed": "inPoint=8000, outPoint=8100",
+      "expected": "inPoint < outPoint",
+      "message": "constraint satisfied"
+    },
+    {
+      "name": "speed_positive",
+      "properties": [
+        "speed"
+      ],
+      "rule": "speed must be a positive rational",
+      "status": "pass",
+      "observed": "speed=5",
+      "expected": "speed > 0",
+      "message": "constraint satisfied"
+    },
+    {
+      "name": "timeline_duration_min",
+      "properties": [
+        "inPoint",
+        "outPoint",
+        "speed"
+      ],
+      "rule": "the combined source span and speed must yield a long enough timeline duration",
+      "status": "fail",
+      "observed": "timelineDuration=20, minTimelineDuration=100",
+      "expected": "timelineDuration >= 100",
+      "message": "combined inPoint=8000, outPoint=8100 and speed=5 yield timeline duration 20, below minimum 100"
+    }
+  ],
+  "conflicts": [
+    {
+      "conflictId": "sha256:440c3570dd6f7f7763736640473419b3ddaeb42a3542502cbd4b03c2bb101078",
+      "kind": "dependency_violation",
+      "properties": [
+        "inPoint",
+        "outPoint",
+        "speed"
+      ],
+      "reason": "timeline_duration_min",
+      "message": "combined inPoint=8000, outPoint=8100 and speed=5 yield timeline duration 20, below minimum 100",
+      "editIds": [
+        "edit-in-a",
+        "edit-out-b",
+        "edit-speed-a"
+      ],
+      "observed": [
+        {
+          "property": "inPoint",
+          "value": 8000
+        },
+        {
+          "property": "outPoint",
+          "value": 8100
+        },
+        {
+          "property": "speed",
+          "value": {
+            "numerator": 5,
+            "denominator": 1
+          }
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "autoMerge": false,
+    "code": "media_boundary_violation",
+    "reason": "combined property values violate media boundaries: timeline_duration_min",
+    "requiresManualResolution": true
+  }
+}
