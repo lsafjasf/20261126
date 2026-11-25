@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling"
+    xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+    xml:lang="zh-CN"
+    ttp:frameRate="30">
+  <head>
+    <styling>
+      <style xml:id="base" tts:fontSize="16px" tts:color="#ffffff"/>
+      <style xml:id="hot" style="base" tts:color="yellow" tts:fontWeight="bold"/>
+    </styling>
+  </head>
+  <body begin="0s" end="8s">
+    <div>
+      <p xml:id="cue1" begin="1s" end="6s" style="base">
+        <span xml:id="outer" begin="0s" end="4s" tts:color="red">外层
+          <span xml:id="inner" begin="1s" end="3s" style="hot">内层
+            <animate attributeName="tts:color" values="blue;green;yellow"
+                     keyTimes="0;0.5;1" begin="0s" dur="2s" fill="freeze"/>
+            动画文字
+          </span>
+          尾部
+        </span>
+      </p>
+    </div>
+  </body>
+</tt>
