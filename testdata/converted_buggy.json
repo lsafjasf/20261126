@@ -1,0 +1,36 @@
+{
+  "_comment": "模拟有缺陷的转换结果：多层记录被扁平 map 合并，后出现的 null/空值抹掉了继承值。",
+  "Global": {
+    "fontname": "Arial",
+    "fontsize": 20,
+    "primarycolor": "&H00FFFFFF",
+    "bold": false,
+    "italic": false,
+    "borderstyle": 1,
+    "outline": 2,
+    "shadow": 2,
+    "alignment": 2,
+    "marginl": 10,
+    "marginr": 10,
+    "marginv": 10,
+    "encoding": 1
+  },
+  "Default": {
+    "fontname": null,
+    "fontsize": "",
+    "primarycolor": "&H00FFFFFF",
+    "bold": false,
+    "alignment": 2,
+    "marginl": 12
+  },
+  "Title": {
+    "fontname": "",
+    "fontsize": null,
+    "bold": false,
+    "italic": true,
+    "alignment": 7,
+    "outlinecolor": "&H00112233",
+    "marginl": 20,
+    "scalex": 120
+  }
+}

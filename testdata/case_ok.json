@@ -1,0 +1,25 @@
+{
+  "styles": ["Global", "Caption"],
+  "legacy": {
+    "dialect": "ssa",
+    "styles": [
+      {"name": "Global", "fields": {"fontname": "Arial", "fontsize": "20", "alignment": "2"}},
+      {"name": "Caption", "parent": "Global", "fields": {"fontsize": "24", "bold": "-1", "alignment": "5"}}
+    ]
+  },
+  "converted": {
+    "dialect": "ass",
+    "styles": [
+      {"name": "Global", "fields": {"fontname": "Arial", "fontsize": 20, "alignment": 2}},
+      {"name": "Caption", "parent": "Global", "fields": [
+        ["fontname", null],
+        ["fontsize", 24],
+        ["fontsize", null],
+        ["bold", false],
+        ["bold", null],
+        ["bold", true],
+        ["alignment", 7]
+      ]}
+    ]
+  }
+}

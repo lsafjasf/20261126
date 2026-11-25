@@ -1,0 +1,14 @@
+{
+  "legacy": {
+    "dialect": "ssa",
+    "styles": [
+      {"name": "A", "fields": {"fontname": "Arial", "alphalevel": "0", "x-vendor": "z"}}
+    ]
+  },
+  "converted": {
+    "dialect": "ass",
+    "styles": [
+      {"name": "A", "fields": {"fontname": "Arial"}}
+    ]
+  }
+}

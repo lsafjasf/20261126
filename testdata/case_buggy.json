@@ -1,0 +1,6 @@
+{
+  "legacy": "legacy.ssa",
+  "converted": "converted_buggy.json",
+  "report_extra": true,
+  "strict_unmapped": false
+}

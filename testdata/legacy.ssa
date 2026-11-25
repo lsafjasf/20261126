@@ -1,0 +1,11 @@
+[Script Info]
+; 一个模拟“旧 SSA 工具链”的样例：标准 V4 十八列之外，
+; 还用 BasedOn 表达多层继承、XStudioID 表达无法映射的扩展属性。
+ScriptType: v4.00
+
+[V4 Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding, BasedOn, XStudioID
+Style: Global,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,0,0,1,2,2,2,10,10,10,0,1,,g-001
+Style: Default,Calibri,22,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,1,3,1,2,12,12,12,0,1,Global,d-002
+Style: Default,,23,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,1,3,1,2,12,12,12,0,1,Global,d-002-dup
+Style: Title,Impact,48,&H000000FF,&H0000FFFF,&H00112233,&H00000000,-1,1,1,3,0,5,20,20,30,128,1,Default,t-777
