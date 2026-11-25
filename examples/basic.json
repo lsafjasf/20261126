@@ -1,0 +1,41 @@
+{
+  "params": {
+    "sample_rate": 48000,
+    "gap_samples": 0
+  },
+  "sources": [
+    {
+      "id": "intro-aac",
+      "format": "aac",
+      "sample_rate": 44100,
+      "codec_delay": 2112,
+      "encoded_samples": 108544,
+      "edit": {
+        "media_end": 105840
+      }
+    },
+    {
+      "id": "music-opus",
+      "format": "opus",
+      "sample_rate": 48000,
+      "encoded_samples": 12480,
+      "edit": {
+        "media_end": 11520
+      }
+    }
+  ],
+  "clips": [
+    {
+      "id": "intro",
+      "source_id": "intro-aac",
+      "source_start": 0,
+      "source_end": 44100
+    },
+    {
+      "id": "music",
+      "source_id": "music-opus",
+      "source_start": 0,
+      "source_end": 9600
+    }
+  ]
+}
