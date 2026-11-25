@@ -1,0 +1,9 @@
+{
+  "durationSamples": 240384,
+  "durationSeconds": 5.008,
+  "expectedFileName": "timeref-conflict.bwf",
+  "name": "timeref-conflict",
+  "notes": "locked program duration retained; no trusted acquisition startSample",
+  "sampleRate": 48000,
+  "timecodeRate": "25"
+}
