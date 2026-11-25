@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "ticks_per_second": 1000000,
+  "media": [
+    {
+      "id": "media-A",
+      "path": "feature/full-reel.mov",
+      "duration_ticks": 100000000
+    },
+    {
+      "id": "media-B",
+      "path": "feature/insert-reel.mov",
+      "duration_ticks": 20000000
+    }
+  ],
+  "events": [
+    {
+      "id": "CH1",
+      "kind": "chapter",
+      "text": "Opening",
+      "anchor": {
+        "media_id": "media-A",
+        "start_ticks": 5000000,
+        "end_ticks": 35000000
+      }
+    },
+    {
+      "id": "CH2",
+      "kind": "chapter",
+      "text": "Lost Interlude",
+      "anchor": {
+        "media_id": "media-A",
+        "start_ticks": 31000000,
+        "end_ticks": 38000000
+      }
+    },
+    {
+      "id": "FS1",
+      "kind": "forced_subtitle",
+      "text": "Door slams",
+      "anchor": {
+        "media_id": "media-A",
+        "start_ticks": 38000000,
+        "end_ticks": 42000000
+      }
+    },
+    {
+      "id": "SUB1",
+      "kind": "subtitle",
+      "text": "Long ago...",
+      "anchor": {
+        "media_id": "media-A",
+        "start_ticks": 7000000,
+        "end_ticks": 9000000
+      }
+    },
+    {
+      "id": "FS2",
+      "kind": "forced_subtitle",
+      "text": "The end begins",
+      "anchor": {
+        "media_id": "media-A",
+        "start_ticks": 88000000,
+        "end_ticks": 93000000
+      }
+    },
+    {
+      "id": "LEGACY1",
+      "kind": "subtitle",
+      "text": "Unanchored caption"
+    },
+    {
+      "id": "LEGACY2",
+      "kind": "chapter",
+      "text": "Unanchored chapter"
+    }
+  ],
+  "edl": [
+    {
+      "id": "seg-1",
+      "media_id": "media-A",
+      "src_start_ticks": 0,
+      "src_end_ticks": 30000000,
+      "dst_start_ticks": 0
+    },
+    {
+      "id": "seg-2",
+      "media_id": "media-A",
+      "src_start_ticks": 40000000,
+      "src_end_ticks": 50000000,
+      "dst_start_ticks": 30000000
+    },
+    {
+      "id": "seg-3",
+      "media_id": "media-A",
+      "src_start_ticks": 50000000,
+      "src_end_ticks": 70000000,
+      "dst_start_ticks": 40000000
+    },
+    {
+      "id": "seg-4",
+      "media_id": "media-A",
+      "src_start_ticks": 5000000,
+      "src_end_ticks": 10000000,
+      "dst_start_ticks": 80000000
+    },
+    {
+      "id": "seg-5",
+      "media_id": "media-A",
+      "src_start_ticks": 70000000,
+      "src_end_ticks": 90000000,
+      "dst_start_ticks": 85000000
+    },
+    {
+      "id": "seg-6",
+      "media_id": "media-B",
+      "src_start_ticks": 0,
+      "src_end_ticks": 10000000,
+      "dst_start_ticks": 105000000
+    },
+    {
+      "id": "seg-7",
+      "media_id": "media-A",
+      "src_start_ticks": 90000000,
+      "src_end_ticks": 100000000,
+      "dst_start_ticks": 115000000
+    }
+  ],
+  "decisions": {
+    "CH1#media-A:30000000-35000000": {
+      "action": "custom",
+      "dst_start_ticks": 28000000,
+      "dst_end_ticks": 30000000,
+      "reason": "editor relocated the chapter tail just before the next segment"
+    },
+    "CH1#media-A:5000000-10000000": {
+      "action": "segment",
+      "segment_id": "seg-1",
+      "reason": "chapter follows the original reel order"
+    },
+    "CH2#media-A:31000000-38000000": {
+      "action": "drop",
+      "reason": "interlude chapter removed with its footage"
+    },
+    "FS1#media-A:38000000-40000000": {
+      "action": "drop",
+      "reason": "first half of the forced subtitle was cut with the deleted reel"
+    },
+    "SUB1#media-A:7000000-9000000": {
+      "action": "segment",
+      "segment_id": "seg-1",
+      "reason": "keep original placement; flashback copy is not the canonical subtitle"
+    }
+  },
+  "anchor_decisions": {
+    "LEGACY1": {
+      "media_id": "media-A",
+      "start_ticks": 12000000,
+      "end_ticks": 14000000,
+      "reason": "manual recovery from legacy project file"
+    },
+    "LEGACY2": {
+      "media_id": "media-B",
+      "start_ticks": 2000000,
+      "end_ticks": 6000000,
+      "reason": "insert-reel chapter found during review"
+    }
+  }
+}
