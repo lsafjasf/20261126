@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling"
+    xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+    xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt"
+    xml:lang="en"
+    ttp:frameRate="25"
+    ttp:frameRateMultiplier="1 1"
+    tts:extent="640px 360px">
+  <head>
+    <styling>
+      <style xml:id="caption"
+          tts:color="#fff4c2"
+          tts:fontSize="30px"
+          tts:textAlign="center"
+          tts:displayAlign="after"
+          tts:backgroundColor="rgba(5, 18, 35, 0.78)"
+          tts:padding="8px 12px"/>
+      <style xml:id="hidden-note"
+          tts:display="none"
+          tts:visibility="hidden"
+          tts:opacity="0"/>
+    </styling>
+    <layout>
+      <region xml:id="full" tts:origin="0% 0%" tts:extent="100% 100%"/>
+      <region xml:id="captions" tts:origin="5% 72%" tts:extent="90% 22%" tts:showBackground="whenActive"/>
+    </layout>
+  </head>
+  <body>
+    <div xml:id="bg-a" begin="0s" end="3s" region="full"
+        smpte:backgroundImage="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABaEAIAAADgNBZGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRP///////wlY99wAAAAHdElNRQfqCxkRIRSqa7OZAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI2LTExLTI1VDE3OjMzOjIwKzAwOjAwsgH37AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNi0xMS0yNVQxNzozMzoyMCswMDowMMNcT1AAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjYtMTEtMjVUMTc6MzM6MjArMDA6MDCUSW6PAAAB6UlEQVR42u3dy23YMBBFUVKYnWsKKCR12D254yzYgTfGBc6pQBvhUZoP98fHnz/f3wsImvXuz/X3tx8D+IlZZ3/tf7/9GMBPzHofCQxRs8/+WhIYkiQwhM06+3N7gSFp1usIDVWzjyM0VElgCPMNDGH3L7QEhqRbB5bAkKQXGsJmnUcvNERJYAi7dWAJDEm3DiyBIWnWqw4MVbPOoxMLomb7iQVZt5VSAkPSrPfxEwuiZp2tjARRs5WRIGvWeZSRIMpAP4TNslIHsu4wgwSGpNlnf/kGhiaL3SFslqtVIMtAP4TNPo9eaIgy0A9htw4sgSFJAkPYbCt1IMsRGsIcoSHMQD+EzX4fvdAQdRPYCwxJxgkh7C52l8CQdOvAEhiSJDCE+QaGsHu1igSGpNmuVoEsnVgQphcawu7VKhIYklzwDWGO0BBmoB/CZr2uVoGq2RIYstzMAGHuRoKwWe+jFxqiZh9lJKgyTghhtw4sgSHp1oElMCTNtlYWsmYZ6IcsA/0QNsvVKpB1v4ElMCTphYawu9hdAkPSrNdeaKiabaUOZFmpA2GO0BBmoB/CZr+mkaDqJrAXGJLuSh1HaEi6wwwSGJJuHVgCQ5KVOhBmpQ6E+QaGMHVgCNOJBWF6oSHMQD+EzbZSB7L+AyzOUWSKNYRcAAAAAElFTkSuQmCC">
+      <p xml:id="bg-a-label" begin="0s" end="3s" region="captions"
+          style="caption">LAYER ONE / BACKGROUND IMAGE</p>
+    </div>
+    <div xml:id="bg-b" begin="3s" end="6s" region="full"
+        smpte:backgroundImage="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABaEAIAAADgNBZGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRP///////wlY99wAAAAHdElNRQfqCxkRIRSqa7OZAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI2LTExLTI1VDE3OjMzOjIwKzAwOjAwsgH37AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNi0xMS0yNVQxNzozMzoyMCswMDowMMNcT1AAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjYtMTEtMjVUMTc6MzM6MjArMDA6MDCUSW6PAAAB2UlEQVR42u3dy00lMRBAUWxVFkhMhERACO1AHlEyC2fABl3pnAh60yrV1+vz8/396+sNCJp11uvn319/BvAbs5/97QeGptlnv34+/vozgN+Y9SwRGKJmn/168wND0qwjB4aq2c+SA0OUCAxhs5+tDwxRs44qNFTpA0PYLJNYkDX7LH1giDILDWF3G0kODEmz9YEha5Y+MGTN1geGrFlHBIaqW4VWxIKkWfrAkKUPDGFyYAi7VWg5MCTZB4YwFzkg7N7E8gND0o3AcmBIuhc5RGBImvUY5IAq64QQdtcJ5cCQZJ0QwoxSQphlBgibfQxyQNU97K6IBUke+IYwj5tBmHVCCLPMAGHWCSHMQj+EWSeEsFmPo3ZQpQ8MYfaBIWyWKjRk3QgsB4YkD3xDmIscEOYiB4TN1geGLBEYwmY/+9sgBzTNchMLskxiQdi9yKGIBUluYkGYm1gQpo0EYXeUUg4MSbMeC/1QpY0EYRb6IcxCP4SpQkPYXSf0A0OSw+4Q5oFvCJt9lj4wRHncDMIsM0CYdUIIu1VoRSxIulVoERiSZjtqB1kiMITJgSFs9lkOu0OU50UhzEUOCLsXOeTAkCQCQ5iLHBDmIgeE3QgsB4YkD3xDmAe+Iew/f4TICE2PfFsAAAAASUVORK5CYII=">
+      <p xml:id="bg-b-label" begin="0s" end="3s" region="captions"
+          style="caption">LAYER TWO / SECOND BACKGROUND</p>
+    </div>
+    <p xml:id="note-hidden" role="annotation" begin="1s" end="5.5s"
+        region="captions" style="hidden-note">HIDDEN ANNOTATION / MUST NOT RENDER</p>
+    <!-- reviewer note: this XML comment is also a hidden annotation -->
+  </body>
+</tt>
