@@ -1,0 +1,29 @@
+WEBVTT
+
+REGION
+id:top
+width:40%
+
+NOTE this file intentionally repeats cue identifiers
+
+1
+00:00:01.000 --> 00:00:03.000
+Opening line
+
+1
+00:00:04.000 --> 00:00:06.000
+Second segment, same identifier, different time and text
+
+1
+00:00:04.000 --> 00:00:06.000
+Second segment, same identifier, different time and text
+
+2
+00:00:07.500 --> 00:00:09.000 line:82% position:10%
+Styled <b>cue</b>
+
+00:10.000 --> 00:12.000
+Anonymous cue
+
+00:10.000 --> 00:12.000
+Anonymous cue
