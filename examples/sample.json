@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "title": "MIDNIGHT_RATE_MISMATCH",
+  "reels": [
+    {
+      "reelId": "VOL_A",
+      "sourceListRate": "25",
+      "eventTableRate": "24"
+    },
+    {
+      "reelId": "VOL_B",
+      "sourceListRate": "25",
+      "eventTableRate": "25"
+    }
+  ],
+  "sourceList": [
+    {
+      "sourceId": "SRC_A1",
+      "reelId": "VOL_A",
+      "rate": "25",
+      "name": "interview"
+    },
+    {
+      "sourceId": "SRC_A2",
+      "reelId": "VOL_A",
+      "rate": "25",
+      "name": "midnight bridge"
+    },
+    {
+      "sourceId": "SRC_A3",
+      "reelId": "VOL_A",
+      "rate": "25",
+      "name": "cutaway"
+    },
+    {
+      "sourceId": "SRC_A4",
+      "reelId": "VOL_A",
+      "rate": "25",
+      "name": "damaged row"
+    },
+    {
+      "sourceId": "SRC_B1",
+      "reelId": "VOL_B",
+      "rate": "25",
+      "name": "clean control"
+    }
+  ],
+  "events": [
+    {
+      "number": 1,
+      "eventId": "001",
+      "reelId": "VOL_A",
+      "sourceId": "SRC_A1",
+      "rate": "24",
+      "sourceIn": "00:00:10:00",
+      "sourceOut": "00:00:12:00",
+      "recordIn": "01:00:00:00",
+      "recordOut": "01:00:02:00"
+    },
+    {
+      "number": 2,
+      "eventId": "002",
+      "reelId": "VOL_A",
+      "sourceId": "SRC_A2",
+      "rate": "24",
+      "sourceIn": "23:59:58:00",
+      "sourceOut": "00:00:00:00",
+      "crossesMidnight": true,
+      "recordIn": "01:00:02:00",
+      "recordOut": "01:00:04:00"
+    },
+    {
+      "number": 3,
+      "eventId": "003",
+      "reelId": "VOL_A",
+      "sourceId": "SRC_A3",
+      "sourceIn": "01:00:00:00",
+      "sourceOut": "01:00:01:00",
+      "recordIn": "01:00:04:00",
+      "recordOut": "01:00:05:00"
+    },
+    {
+      "number": 4,
+      "eventId": "004",
+      "reelId": "VOL_A",
+      "sourceId": "SRC_A4",
+      "rate": "24",
+      "sourceIn": "00:00:20:00",
+      "sourceOut": "00:00:19:00",
+      "recordIn": "01:00:05:00",
+      "recordOut": "01:00:06:00"
+    },
+    {
+      "number": 5,
+      "eventId": "005",
+      "reelId": "VOL_B",
+      "sourceId": "SRC_B1",
+      "rate": "25",
+      "sourceIn": "00:00:05:00",
+      "sourceOut": "00:00:06:00"
+    }
+  ]
+}
