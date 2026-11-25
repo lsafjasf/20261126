@@ -1,0 +1,14 @@
+{
+  "pre_skip": 120,
+  "packets": [
+    {"id": "p0", "sequence": 1, "toc": 0, "granule_position": 480, "text": "第一句"},
+    {"id": "p1", "sequence": 2, "toc": 0, "granule_position": 960, "text": "第二句"},
+    {"id": "p2", "sequence": 3, "toc": 0, "granule_position": 1440, "received": false, "generator_text": "生成端原文不能用于普通播放"},
+    {"id": "p3", "sequence": 4, "toc": 0, "granule_position": 1920, "text": "恢复后的句子"},
+    {"id": "p5", "sequence": 6, "toc": 0, "granule_position": 2880, "text": "时间戳跳变后的句子"},
+    {"id": "bad-duration", "sequence": 7, "duration_samples": 100}
+  ],
+  "cues": [
+    {"id": "cue-gap", "start_sample": 1800, "end_sample": 2500, "text": "跨缺口字幕"}
+  ]
+}
