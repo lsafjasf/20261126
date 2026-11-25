@@ -1,0 +1,552 @@
+FONT/SUBTITLE BURN-IN AUDIT
+Generated:    2026-11-25 20:31:37 UTC
+Subtitle:     testdata/subtitles/lecture.ass (ass, 6 cues)
+Primary font: Nimbus Sans [testdata/fonts/NimbusSans-Regular.otf] face#0, 855 glyphs
+
+== 1. RENDER ENCODING ==
+Detected: utf-8 | U+FFFD: 0 | embedded NULs: 0 | mojibake: false
+  - source encoding: valid UTF-8 without BOM
+
+== FONTS REQUESTED BY SUBTITLE ==
+  - Nimbus Sans                  (style:Default)
+  - Nimbus Sans                  (style:Narration)
+  - Droid Sans Fallback          (inline:fn)
+
+== 2. GLYPH COVERAGE (cmap) ==
+Distinct missing runes: 65 | total missing occurrences: 88
+
+  [U+2460] "①"  block=Enclosed Alphanumerics script=Common category=No (other number) hits=1
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4]
+    substitute[nfkc]: "①" -> "1"  (NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters)
+    fallback fonts (explicit approval required):
+      * DejaVu Sans  testdata/fonts/fallback/DejaVuSans.ttf
+
+  [U+3001] "、"  block=CJK Symbols and Punctuation script=Han category=Po (other punctuation) hits=5
+    first seen: cue 2 @ 00:00:04.500
+    cue line : 希腊字母 α、β、γ 与大写 Δ、Σ、Ω
+    cues     : [2 3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+300A] "《"  block=CJK Symbols and Punctuation script=Han category=Ps (open punctuation) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+300B] "》"  block=CJK Symbols and Punctuation script=Han category=Pe (close punctuation) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+4E00] "一"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1 6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+4E0E] "与"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=4
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1 2 4 6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+4E2D] "中"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+4E66] "书"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+4F53] "体"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5168] "全"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+516C] "公"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5199] "写"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 2 @ 00:00:04.500
+    cue line : 希腊字母 α、β、γ 与大写 Δ、Σ、Ω
+    cues     : [2]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+51FA] "出"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+53F7] "号"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=4
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3 6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+540C] "同"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+540D] "名"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+548C] "和"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+56DE] "回"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1 5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5708] "圈"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5728] "在"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5927] "大"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 2 @ 00:00:04.500
+    cue line : 希腊字母 α、β、γ 与大写 Δ、Σ、Ω
+    cues     : [2]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5934] "头"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5B57] "字"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=5
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1 2 4 5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5B66] "学"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5E0C] "希"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 2 @ 00:00:04.500
+    cue line : 希腊字母 α、β、γ 与大写 Δ、Σ、Ω
+    cues     : [2]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5E26] "带"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5E55] "幕"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5EA6] "度"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5F0F] "式"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4 5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5F55] "录"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+5F62] "形"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+62EC] "括"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6362] "换"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6570] "数"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4 6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6587] "文"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+663E] "显"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+672C] "本"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6807] "标"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6B8A] "殊"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6BCD] "母"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 2 @ 00:00:04.500
+    cue line : 希腊字母 α、β、γ 与大写 Δ、Σ、Ω
+    cues     : [2]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6C42] "求"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+6D4B] "测"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+70B9] "点"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+70E7] "烧"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7279] "特"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+73B0] "现"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7565] "略"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7701] "省"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7801] "码"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+793A] "示"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7AE0] "章"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7B26] "符"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7B2C] "第"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7BAD] "箭"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 6 @ 00:00:20.500
+    cue line : 数学符号 ∑ 与箭头 → 在同一 / 换行出现
+    cues     : [6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+7F16] "编"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+814A] "腊"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 2 @ 00:00:04.500
+    cue line : 希腊字母 α、β、γ 与大写 Δ、Σ、Ω
+    cues     : [2]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+884C] "行"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5 6]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+89D2] "角"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3 4]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+8BD5] "试"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+8BF7] "请"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=1
+    first seen: cue 5 @ 00:00:16.500
+    cue line : 本行显式请求回退字体显示中文
+    cues     : [5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+9000] "退"  block=CJK Unified Ideographs script=Han category=Lo (other letter) hits=2
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1 5]
+    substitute: none safe — keep the rune and add a covering font (do not delete CJK/Greek text)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+FF08] "（"  block=Halfwidth and Fullwidth Forms script=Common category=Ps (open punctuation) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute[punctuation-alias]: "（" -> "("  (typographic punctuation mapped to basic ASCII/CJK punctuation usually present in the primary font)
+    substitute[nfkc]: "（" -> "("  (NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+FF09] "）"  block=Halfwidth and Fullwidth Forms script=Common category=Pe (close punctuation) hits=1
+    first seen: cue 3 @ 00:00:08.500
+    cue line : 特殊标点：全角括号（测试）、省略号……和书名号《编码》
+    cues     : [3]
+    substitute[punctuation-alias]: "）" -> ")"  (typographic punctuation mapped to basic ASCII/CJK punctuation usually present in the primary font)
+    substitute[nfkc]: "）" -> ")"  (NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+FF0C] "，"  block=Halfwidth and Fullwidth Forms script=Common category=Po (other punctuation) hits=1
+    first seen: cue 4 @ 00:00:12.500
+    cue line : 带圈数字 ① 与角度 90°，公式 π≈3.14
+    cues     : [4]
+    substitute[punctuation-alias]: "，" -> ","  (typographic punctuation mapped to basic ASCII/CJK punctuation usually present in the primary font)
+    substitute[nfkc]: "，" -> ","  (NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+  [U+FF1A] "："  block=Halfwidth and Fullwidth Forms script=Common category=Po (other punctuation) hits=2
+    first seen: cue 1 @ 00:00:01.200
+    cue line : 第一章：字幕烧录与字形回退
+    cues     : [1 3]
+    substitute[punctuation-alias]: "：" -> ":"  (typographic punctuation mapped to basic ASCII/CJK punctuation usually present in the primary font)
+    substitute[nfkc]: "：" -> ":"  (NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters)
+    fallback fonts (explicit approval required):
+      * Droid Sans Fallback  testdata/fonts/fallback/DroidSansFallbackFull.ttf
+
+== 3. FALLBACK CANDIDATE FONTS (ranked, not applied) ==
+  1. Droid Sans Fallback [testdata/fonts/fallback/DroidSansFallbackFull.ttf] covers 64/65 missing runes
+  2. DejaVu Sans [testdata/fonts/fallback/DejaVuSans.ttf] covers 1/65 missing runes
+  No font above is activated automatically. Add the chosen face to the render
+  pipeline (e.g. ffmpeg fontsdir / libass FontProvider) and re-run the burn-in.
+
+== PARSER WARNINGS ==
+  - source encoding: valid UTF-8 without BOM
+
+RESULT: FAIL — tofu will appear in the burned-in output until coverage or encoding is fixed.
+

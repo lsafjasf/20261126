@@ -1,0 +1,2081 @@
+{
+  "generatedAt": "2026-11-25T20:31:37.868885425Z",
+  "subtitlePath": "testdata/subtitles/lecture.srt",
+  "subtitleFormat": "srt",
+  "cueCount": 6,
+  "declaredFonts": null,
+  "primaryFont": {
+    "path": "testdata/fonts/NimbusSans-Regular.otf",
+    "faceIndex": 0,
+    "family": "Nimbus Sans",
+    "fullName": "Nimbus Sans",
+    "numGlyphs": 855
+  },
+  "encoding": {
+    "detected": "utf-8",
+    "notes": [
+      "source encoding: valid UTF-8 without BOM"
+    ],
+    "replacementRunes": 0,
+    "embeddedNuls": 0,
+    "mojibake": false
+  },
+  "distinctMissing": 65,
+  "totalMissingHits": 90,
+  "missing": [
+    {
+      "info": {
+        "rune": 9312,
+        "codepoint": "U+2460",
+        "display": "①",
+        "block": "Enclosed Alphanumerics",
+        "script": "Common",
+        "category": "No (other number)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": [
+        {
+          "kind": "nfkc",
+          "from": "①",
+          "to": "1",
+          "codepoint": "U+2460",
+          "rationale": "NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters"
+        }
+      ],
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DejaVuSans.ttf",
+          "family": "DejaVu Sans",
+          "fullName": "DejaVu Sans"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 12289,
+        "codepoint": "U+3001",
+        "display": "、",
+        "block": "CJK Symbols and Punctuation",
+        "script": "Han",
+        "category": "Po (other punctuation)"
+      },
+      "occurrences": 6,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2,
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 12298,
+        "codepoint": "U+300A",
+        "display": "《",
+        "block": "CJK Symbols and Punctuation",
+        "script": "Han",
+        "category": "Ps (open punctuation)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 12299,
+        "codepoint": "U+300B",
+        "display": "》",
+        "block": "CJK Symbols and Punctuation",
+        "script": "Han",
+        "category": "Pe (close punctuation)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 19968,
+        "codepoint": "U+4E00",
+        "display": "一",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 2,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1,
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 19982,
+        "codepoint": "U+4E0E",
+        "display": "与",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 4,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20013,
+        "codepoint": "U+4E2D",
+        "display": "中",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 5,
+        "start": "00:00:16.500",
+        "line": "Mixing 中文 and Greek: αβγ — the font must cover both scripts"
+      },
+      "cueIndexes": [
+        5
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20070,
+        "codepoint": "U+4E66",
+        "display": "书",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20110,
+        "codepoint": "U+4E8E",
+        "display": "于",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20197,
+        "codepoint": "U+4EE5",
+        "display": "以",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20840,
+        "codepoint": "U+5168",
+        "display": "全",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 2,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3,
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20844,
+        "codepoint": "U+516C",
+        "display": "公",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20882,
+        "codepoint": "U+5192",
+        "display": "冒",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20889,
+        "codepoint": "U+5199",
+        "display": "写",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 20986,
+        "codepoint": "U+51FA",
+        "display": "出",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 21450,
+        "codepoint": "U+53CA",
+        "display": "及",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 21495,
+        "codepoint": "U+53F7",
+        "display": "号",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 6,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3,
+        4,
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 21516,
+        "codepoint": "U+540C",
+        "display": "同",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 21517,
+        "codepoint": "U+540D",
+        "display": "名",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 21644,
+        "codepoint": "U+548C",
+        "display": "和",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 22238,
+        "codepoint": "U+56DE",
+        "display": "回",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 22280,
+        "codepoint": "U+5708",
+        "display": "圈",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 22312,
+        "codepoint": "U+5728",
+        "display": "在",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 22823,
+        "codepoint": "U+5927",
+        "display": "大",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 22836,
+        "codepoint": "U+5934",
+        "display": "头",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 23383,
+        "codepoint": "U+5B57",
+        "display": "字",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 4,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1,
+        2,
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 23398,
+        "codepoint": "U+5B66",
+        "display": "学",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24076,
+        "codepoint": "U+5E0C",
+        "display": "希",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24102,
+        "codepoint": "U+5E26",
+        "display": "带",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24149,
+        "codepoint": "U+5E55",
+        "display": "幕",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24230,
+        "codepoint": "U+5EA6",
+        "display": "度",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24335,
+        "codepoint": "U+5F0F",
+        "display": "式",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24341,
+        "codepoint": "U+5F15",
+        "display": "引",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 2,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24405,
+        "codepoint": "U+5F55",
+        "display": "录",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24418,
+        "codepoint": "U+5F62",
+        "display": "形",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 24847,
+        "codepoint": "U+610F",
+        "display": "意",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 25324,
+        "codepoint": "U+62EC",
+        "display": "括",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 25968,
+        "codepoint": "U+6570",
+        "display": "数",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 2,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4,
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 25991,
+        "codepoint": "U+6587",
+        "display": "文",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 5,
+        "start": "00:00:16.500",
+        "line": "Mixing 中文 and Greek: αβγ — the font must cover both scripts"
+      },
+      "cueIndexes": [
+        5
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 26631,
+        "codepoint": "U+6807",
+        "display": "标",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 27530,
+        "codepoint": "U+6B8A",
+        "display": "殊",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 27597,
+        "codepoint": "U+6BCD",
+        "display": "母",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 27880,
+        "codepoint": "U+6CE8",
+        "display": "注",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 4,
+        "start": "00:00:12.500",
+        "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°"
+      },
+      "cueIndexes": [
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 27979,
+        "codepoint": "U+6D4B",
+        "display": "测",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 28857,
+        "codepoint": "U+70B9",
+        "display": "点",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 28903,
+        "codepoint": "U+70E7",
+        "display": "烧",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 29305,
+        "codepoint": "U+7279",
+        "display": "特",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 29616,
+        "codepoint": "U+73B0",
+        "display": "现",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 29992,
+        "codepoint": "U+7528",
+        "display": "用",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 2,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2,
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 30053,
+        "codepoint": "U+7565",
+        "display": "略",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 30465,
+        "codepoint": "U+7701",
+        "display": "省",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 30721,
+        "codepoint": "U+7801",
+        "display": "码",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 31456,
+        "codepoint": "U+7AE0",
+        "display": "章",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 31526,
+        "codepoint": "U+7B26",
+        "display": "符",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 31532,
+        "codepoint": "U+7B2C",
+        "display": "第",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 31661,
+        "codepoint": "U+7BAD",
+        "display": "箭",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 32534,
+        "codepoint": "U+7F16",
+        "display": "编",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 33098,
+        "codepoint": "U+814A",
+        "display": "腊",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 2,
+        "start": "00:00:04.500",
+        "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式"
+      },
+      "cueIndexes": [
+        2
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 34892,
+        "codepoint": "U+884C",
+        "display": "行",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 6,
+        "start": "00:00:20.500",
+        "line": "数学符号 ∑ 与箭头 → 在同一行出现"
+      },
+      "cueIndexes": [
+        6
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 35282,
+        "codepoint": "U+89D2",
+        "display": "角",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 3,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3,
+        4
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 35797,
+        "codepoint": "U+8BD5",
+        "display": "试",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 36864,
+        "codepoint": "U+9000",
+        "display": "退",
+        "block": "CJK Unified Ideographs",
+        "script": "Han",
+        "category": "Lo (other letter)"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1
+      ],
+      "substitutions": null,
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 65288,
+        "codepoint": "U+FF08",
+        "display": "（",
+        "block": "Halfwidth and Fullwidth Forms",
+        "script": "Common",
+        "category": "Ps (open punctuation)",
+        "punctAlias": "("
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": [
+        {
+          "kind": "punctuation-alias",
+          "from": "（",
+          "to": "(",
+          "codepoint": "U+FF08",
+          "rationale": "typographic punctuation mapped to basic ASCII/CJK punctuation usually present in the primary font"
+        },
+        {
+          "kind": "nfkc",
+          "from": "（",
+          "to": "(",
+          "codepoint": "U+FF08",
+          "rationale": "NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters"
+        }
+      ],
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 65289,
+        "codepoint": "U+FF09",
+        "display": "）",
+        "block": "Halfwidth and Fullwidth Forms",
+        "script": "Common",
+        "category": "Pe (close punctuation)",
+        "punctAlias": ")"
+      },
+      "occurrences": 1,
+      "firstOccurrence": {
+        "cueIndex": 3,
+        "start": "00:00:08.500",
+        "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》"
+      },
+      "cueIndexes": [
+        3
+      ],
+      "substitutions": [
+        {
+          "kind": "punctuation-alias",
+          "from": "）",
+          "to": ")",
+          "codepoint": "U+FF09",
+          "rationale": "typographic punctuation mapped to basic ASCII/CJK punctuation usually present in the primary font"
+        },
+        {
+          "kind": "nfkc",
+          "from": "）",
+          "to": ")",
+          "codepoint": "U+FF09",
+          "rationale": "NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters"
+        }
+      ],
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    },
+    {
+      "info": {
+        "rune": 65306,
+        "codepoint": "U+FF1A",
+        "display": "：",
+        "block": "Halfwidth and Fullwidth Forms",
+        "script": "Common",
+        "category": "Po (other punctuation)",
+        "punctAlias": ":"
+      },
+      "occurrences": 3,
+      "firstOccurrence": {
+        "cueIndex": 1,
+        "start": "00:00:01.200",
+        "line": "第一章：字幕烧录与字形回退"
+      },
+      "cueIndexes": [
+        1,
+        3,
+        4
+      ],
+      "substitutions": [
+        {
+          "kind": "punctuation-alias",
+          "from": "：",
+          "to": ":",
+          "codepoint": "U+FF1A",
+          "rationale": "typographic punctuation mapped to basic ASCII/CJK punctuation usually present in the primary font"
+        },
+        {
+          "kind": "nfkc",
+          "from": "：",
+          "to": ":",
+          "codepoint": "U+FF1A",
+          "rationale": "NFKC compatibility fold (fullwidth/halfwidth, ligature or enclosed form) onto base characters"
+        }
+      ],
+      "fallbackFonts": [
+        {
+          "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+          "family": "Droid Sans Fallback",
+          "fullName": "Droid Sans Fallback"
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "path": "testdata/fonts/fallback/DroidSansFallbackFull.ttf",
+      "family": "Droid Sans Fallback",
+      "fullName": "Droid Sans Fallback",
+      "covers": [
+        12289,
+        12298,
+        12299,
+        19968,
+        19982,
+        20013,
+        20070,
+        20110,
+        20197,
+        20840,
+        20844,
+        20882,
+        20889,
+        20986,
+        21450,
+        21495,
+        21516,
+        21517,
+        21644,
+        22238,
+        22280,
+        22312,
+        22823,
+        22836,
+        23383,
+        23398,
+        24076,
+        24102,
+        24149,
+        24230,
+        24335,
+        24341,
+        24405,
+        24418,
+        24847,
+        25324,
+        25968,
+        25991,
+        26631,
+        27530,
+        27597,
+        27880,
+        27979,
+        28857,
+        28903,
+        29305,
+        29616,
+        29992,
+        30053,
+        30465,
+        30721,
+        31456,
+        31526,
+        31532,
+        31661,
+        32534,
+        33098,
+        34892,
+        35282,
+        35797,
+        36864,
+        65288,
+        65289,
+        65306
+      ],
+      "coveredCount": 64,
+      "totalMissing": 65
+    },
+    {
+      "path": "testdata/fonts/fallback/DejaVuSans.ttf",
+      "family": "DejaVu Sans",
+      "fullName": "DejaVu Sans",
+      "covers": [
+        9312
+      ],
+      "coveredCount": 1,
+      "totalMissing": 65
+    }
+  ],
+  "proofs": [
+    {
+      "cueIndex": 1,
+      "start": "00:00:01.200",
+      "line": "第一章：字幕烧录与字形回退",
+      "boxes": [
+        "U+7B2C",
+        "U+4E00",
+        "U+7AE0",
+        "U+FF1A",
+        "U+5B57",
+        "U+5E55",
+        "U+70E7",
+        "U+5F55",
+        "U+4E0E",
+        "U+5B57",
+        "U+5F62",
+        "U+56DE",
+        "U+9000"
+      ],
+      "pngPath": "reports/proof/cue001.png"
+    },
+    {
+      "cueIndex": 2,
+      "start": "00:00:04.500",
+      "line": "希腊字母 α、β、γ 与大写 Δ、Σ、Ω 用于公式",
+      "boxes": [
+        "U+5E0C",
+        "U+814A",
+        "U+5B57",
+        "U+6BCD",
+        "U+3001",
+        "U+3001",
+        "U+4E0E",
+        "U+5927",
+        "U+5199",
+        "U+3001",
+        "U+3001",
+        "U+7528",
+        "U+4E8E",
+        "U+516C",
+        "U+5F0F"
+      ],
+      "pngPath": "reports/proof/cue002.png"
+    },
+    {
+      "cueIndex": 3,
+      "start": "00:00:08.500",
+      "line": "特殊标点：全角括号（测试）、引号“引用”、省略号……和书名号《编码》",
+      "boxes": [
+        "U+7279",
+        "U+6B8A",
+        "U+6807",
+        "U+70B9",
+        "U+FF1A",
+        "U+5168",
+        "U+89D2",
+        "U+62EC",
+        "U+53F7",
+        "U+FF08",
+        "U+6D4B",
+        "U+8BD5",
+        "U+FF09",
+        "U+3001",
+        "U+5F15",
+        "U+53F7",
+        "U+5F15",
+        "U+7528",
+        "U+3001",
+        "U+7701",
+        "U+7565",
+        "U+53F7",
+        "U+548C",
+        "U+4E66",
+        "U+540D",
+        "U+53F7",
+        "U+300A",
+        "U+7F16",
+        "U+7801",
+        "U+300B"
+      ],
+      "pngPath": "reports/proof/cue003.png"
+    },
+    {
+      "cueIndex": 4,
+      "start": "00:00:12.500",
+      "line": "带圈数字 ① 与全角冒号：注意 π≈3.14 以及角度 90°",
+      "boxes": [
+        "U+5E26",
+        "U+5708",
+        "U+6570",
+        "U+5B57",
+        "U+2460",
+        "U+4E0E",
+        "U+5168",
+        "U+89D2",
+        "U+5192",
+        "U+53F7",
+        "U+FF1A",
+        "U+6CE8",
+        "U+610F",
+        "U+4EE5",
+        "U+53CA",
+        "U+89D2",
+        "U+5EA6"
+      ],
+      "pngPath": "reports/proof/cue004.png"
+    },
+    {
+      "cueIndex": 5,
+      "start": "00:00:16.500",
+      "line": "Mixing 中文 and Greek: αβγ — the font must cover both scripts",
+      "boxes": [
+        "U+4E2D",
+        "U+6587"
+      ],
+      "pngPath": "reports/proof/cue005.png"
+    },
+    {
+      "cueIndex": 6,
+      "start": "00:00:20.500",
+      "line": "数学符号 ∑ 与箭头 → 在同一行出现",
+      "boxes": [
+        "U+6570",
+        "U+5B66",
+        "U+7B26",
+        "U+53F7",
+        "U+4E0E",
+        "U+7BAD",
+        "U+5934",
+        "U+5728",
+        "U+540C",
+        "U+4E00",
+        "U+884C",
+        "U+51FA",
+        "U+73B0"
+      ],
+      "pngPath": "reports/proof/cue006.png"
+    }
+  ],
+  "warnings": [
+    "source encoding: valid UTF-8 without BOM"
+  ]
+}
