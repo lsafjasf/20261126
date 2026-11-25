@@ -1,0 +1,8 @@
+{
+  "name": "multilingual-demo",
+  "tracks": [
+    {"id": "en-main", "language": "en", "role": "main", "default": true},
+    {"id": "en-alt", "language": "en", "role": "alternate", "default": true},
+    {"id": "zh-sdh", "language": "zh-Hans", "role": "main", "accessibility": "hearing-impaired"}
+  ]
+}
