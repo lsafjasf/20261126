@@ -1,0 +1,223 @@
+{
+  "objects": [
+    {
+      "id": "header-1",
+      "class": "Header",
+      "properties": {
+        "ByteOrder": "little",
+        "LastModified": "2026-11-20T09:30:00Z",
+        "ContentStorage": { "ref": "cs-1" }
+      }
+    },
+    {
+      "id": "cs-1",
+      "class": "ContentStorage",
+      "properties": {
+        "Mobs": [{ "ref": "comp-1" }, { "ref": "mm-1" }, { "ref": "sm-1" }]
+      }
+    },
+    {
+      "id": "comp-1",
+      "class": "CompositionMob",
+      "properties": {
+        "MobID": "urn:smpte:umid:060a2b34.0101.0101.01010f00.13000000.6742aa01",
+        "Name": "seq_01",
+        "CreationTime": "2026-11-20T09:30:00Z",
+        "Slots": [{ "ref": "slot-c1" }],
+        "DescriptiveMetadata": { "ref": "dmf-gone" },
+        "UserComments": "editor: j.s.; status: rough-cut"
+      }
+    },
+    {
+      "id": "slot-c1",
+      "class": "TimelineMobSlot",
+      "properties": {
+        "SlotID": 1,
+        "SlotName": "V1",
+        "EditRate": "25/1",
+        "Segment": { "ref": "seq-c1" }
+      }
+    },
+    {
+      "id": "seq-c1",
+      "class": "Sequence",
+      "properties": {
+        "DataDefinition": { "ref": "dd-picture" },
+        "Components": [{ "ref": "clip-ok" }, { "ref": "clip-missing" }, { "ref": "og-1" }]
+      }
+    },
+    {
+      "id": "clip-ok",
+      "class": "SourceClip",
+      "properties": {
+        "DataDefinition": { "ref": "dd-picture" },
+        "StartTime": 0,
+        "Length": 50,
+        "SourceID": { "ref": "sm-1" },
+        "SourceMobSlot": 1
+      }
+    },
+    {
+      "id": "clip-missing",
+      "class": "SourceClip",
+      "properties": {
+        "DataDefinition": { "ref": "dd-picture" },
+        "StartTime": 0,
+        "Length": 75,
+        "SourceID": { "ref": "sm-gone" }
+      }
+    },
+    {
+      "id": "og-1",
+      "class": "OperationGroup",
+      "properties": {
+        "DataDefinition": { "ref": "dd-picture" },
+        "Operation": { "ref": "opdef-dissolve" },
+        "InputSegments": [{ "ref": "clip-ok" }],
+        "Parameters": [{ "ref": "param-1" }],
+        "Length": 25
+      }
+    },
+    {
+      "id": "opdef-dissolve",
+      "class": "OperationDefinition",
+      "properties": {
+        "Identification": "urn:smpte:metadata:op:video-dissolve",
+        "Name": "Video Dissolve",
+        "DataDefinition": { "ref": "dd-picture" }
+      }
+    },
+    {
+      "id": "param-1",
+      "class": "Parameter",
+      "properties": {
+        "ParameterDefinition": { "ref": "pdef-level" },
+        "Value": 0.5
+      }
+    },
+    {
+      "id": "pdef-level",
+      "class": "ParameterDefinition",
+      "properties": {
+        "Identification": "urn:smpte:metadata:param:level",
+        "Name": "Level"
+      }
+    },
+    {
+      "id": "dd-picture",
+      "class": "DataDefinition",
+      "properties": {
+        "Identification": "urn:smpte:metadata:dd:picture",
+        "Name": "Picture"
+      }
+    },
+    {
+      "id": "dd-sound",
+      "class": "DataDefinition",
+      "properties": {
+        "Identification": "urn:smpte:metadata:dd:sound",
+        "Name": "Sound"
+      }
+    },
+    {
+      "id": "mm-1",
+      "class": "MasterMob",
+      "properties": {
+        "MobID": "urn:smpte:umid:060a2b34.0101.0101.01010f00.13000000.6742aa02",
+        "Name": "clip_A",
+        "CreationTime": "2026-11-20T09:31:00Z",
+        "Slots": [{ "ref": "slot-m1" }]
+      }
+    },
+    {
+      "id": "slot-m1",
+      "class": "TimelineMobSlot",
+      "properties": {
+        "SlotID": 1,
+        "SlotName": { "opaque": "AAEC", "type": "urn:example:utf16-raw" },
+        "EditRate": "48000/1",
+        "Segment": { "ref": "clip-m1" }
+      }
+    },
+    {
+      "id": "clip-m1",
+      "class": "SourceClip",
+      "properties": {
+        "DataDefinition": { "ref": "dd-sound" },
+        "StartTime": 0,
+        "Length": 9600,
+        "SourceID": { "ref": "sm-1" },
+        "SourceMobSlot": 1
+      }
+    },
+    {
+      "id": "sm-1",
+      "class": "SourceMob",
+      "properties": {
+        "MobID": "urn:smpte:umid:060a2b34.0101.0101.01010f00.13000000.6742aa03",
+        "Name": "tape_01",
+        "CreationTime": "2026-11-20T09:32:00Z",
+        "Slots": [{ "ref": "slot-s1" }],
+        "EssenceDescriptor": { "ref": "wave-1" },
+        "DescriptiveMetadata": { "ref": "dmf-1" }
+      }
+    },
+    {
+      "id": "slot-s1",
+      "class": "TimelineMobSlot",
+      "properties": {
+        "SlotID": 1,
+        "SlotName": "A1",
+        "EditRate": "48000/1",
+        "Segment": { "ref": "tc-1" }
+      }
+    },
+    {
+      "id": "tc-1",
+      "class": "Timecode",
+      "properties": {
+        "Start": 0,
+        "FPS": 25,
+        "Drop": false
+      }
+    },
+    {
+      "id": "wave-1",
+      "class": "WaveDescriptor",
+      "properties": {
+        "EssenceKind": "sound",
+        "SampleRate": "48000/1",
+        "Channels": 2,
+        "BitDepth": 24,
+        "Summary": { "opaque": "AQIDBAUGBwg=", "type": "urn:example:raw-ber" }
+      }
+    },
+    {
+      "id": "dmf-1",
+      "class": "DMFramework",
+      "properties": {
+        "Scheme": "SMPTE-DMS1",
+        "Items": [{ "weakref": "dmset-gone", "targetClass": "DMSet" }]
+      }
+    },
+    {
+      "id": "sm-orphan",
+      "class": "SourceMob",
+      "properties": {
+        "MobID": "urn:smpte:umid:060a2b34.0101.0101.01010f00.13000000.6742aa04",
+        "Name": "detached_tape",
+        "CreationTime": "2026-11-19T08:00:00Z",
+        "Slots": [{ "ref": "slot-o1" }]
+      }
+    },
+    {
+      "id": "slot-o1",
+      "class": "TimelineMobSlot",
+      "properties": {
+        "SlotID": 1,
+        "EditRate": "25/1",
+        "Segment": { "ref": "tc-1" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "objects": [
+    {
+      "id": "header-1",
+      "class": "Header",
+      "properties": {
+        "ByteOrder": "little",
+        "ContentStorage": { "ref": "cs-1" }
+      }
+    },
+    {
+      "id": "cs-1",
+      "class": "ContentStorage",
+      "properties": {
+        "Mobs": [{ "ref": "comp-1" }]
+      }
+    },
+    {
+      "id": "comp-1",
+      "class": "CompositionMob",
+      "properties": {
+        "MobID": "urn:smpte:umid:060a2b34.0101.0101.01010f00.13000000.6742ab01",
+        "Name": "seq_fx",
+        "Slots": [{ "ref": "slot-c1" }]
+      }
+    },
+    {
+      "id": "slot-c1",
+      "class": "TimelineMobSlot",
+      "properties": {
+        "SlotID": 1,
+        "SlotName": "V1",
+        "EditRate": "25/1",
+        "Segment": { "ref": "seq-c1" }
+      }
+    },
+    {
+      "id": "seq-c1",
+      "class": "Sequence",
+      "properties": {
+        "DataDefinition": { "ref": "dd-picture" },
+        "Components": [{ "ref": "clip-1" }, { "ref": "og-bad" }]
+      }
+    },
+    {
+      "id": "clip-1",
+      "class": "SourceClip",
+      "properties": {
+        "DataDefinition": { "ref": "dd-picture" },
+        "StartTime": 0,
+        "Length": 100,
+        "SourceID": { "ref": "sm-1" },
+        "SourceMobSlot": 1
+      }
+    },
+    {
+      "id": "og-bad",
+      "class": "OperationGroup",
+      "properties": {
+        "DataDefinition": { "ref": "dd-picture" },
+        "Operation": { "ref": "opdef-gone" },
+        "InputSegments": [{ "ref": "clip-1" }],
+        "Length": 40
+      }
+    },
+    {
+      "id": "dd-picture",
+      "class": "DataDefinition",
+      "properties": {
+        "Identification": "urn:smpte:metadata:dd:picture",
+        "Name": "Picture"
+      }
+    },
+    {
+      "id": "sm-1",
+      "class": "SourceMob",
+      "properties": {
+        "MobID": "urn:smpte:umid:060a2b34.0101.0101.01010f00.13000000.6742ab02",
+        "Name": "tape_02",
+        "Slots": [{ "ref": "slot-s1" }]
+      }
+    },
+    {
+      "id": "slot-s1",
+      "class": "TimelineMobSlot",
+      "properties": {
+        "SlotID": 1,
+        "EditRate": "25/1",
+        "Segment": { "ref": "tc-1" }
+      }
+    },
+    {
+      "id": "tc-1",
+      "class": "Timecode",
+      "properties": {
+        "Start": 0,
+        "FPS": 25,
+        "Drop": false
+      }
+    }
+  ]
+}
