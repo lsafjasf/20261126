@@ -1,0 +1,1775 @@
+{
+  "project": "migration-demo",
+  "media_root": "testdata/media",
+  "summary": {
+    "total": 12,
+    "ok": 2,
+    "missing": 10,
+    "relinked": 7,
+    "blocked": 3
+  },
+  "present_media_ids": [
+    "m11",
+    "m12"
+  ],
+  "assets": [
+    {
+      "media_id": "m01",
+      "name": "intro",
+      "old_path": "old_media/intro.mov",
+      "status": "relinked",
+      "new_path": "testdata/media/intro.mp4",
+      "confidence": 1,
+      "effects": [
+        "fx_m01_1",
+        "fx_m01_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/intro.mp4",
+          "confidence": 1,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 1,
+              "weight": 0.4,
+              "detail": "exact content match"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 4000ms, got 4000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.3798258882342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.625"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 4000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ending_logo.mov",
+          "confidence": 0.3563883882342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.53125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.531"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 4000ms, got 3000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/healthy_a.mov",
+          "confidence": 0.319626032029686,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.500"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.22313016014842982,
+              "weight": 0.2,
+              "detail": "expected 4000ms, got 2500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/logo.mkv",
+          "confidence": 0.29816080664732253,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.484375,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.484"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.1353352832366127,
+              "weight": 0.2,
+              "detail": "expected 4000ms, got 2000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m02",
+      "name": "logo",
+      "old_path": "old_media/logo.mov",
+      "status": "relinked",
+      "new_path": "testdata/media/logo.mkv",
+      "confidence": 1,
+      "effects": [
+        "fx_m02_1",
+        "fx_m02_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/logo.mkv",
+          "confidence": 1,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 1,
+              "weight": 0.4,
+              "detail": "exact content match"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 2000ms, got 2000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/healthy_a.mov",
+          "confidence": 0.38458738194252673,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.453125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.453"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 2000ms, got 2500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ending_logo.mov",
+          "confidence": 0.3602946382342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.546875,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.547"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 2000ms, got 3000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/intro.mp4",
+          "confidence": 0.29816080664732253,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.484375,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.484"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.1353352832366127,
+              "weight": 0.2,
+              "detail": "expected 2000ms, got 4000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.28886366367357275,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.049787068367863944,
+              "weight": 0.2,
+              "detail": "expected 2000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m03",
+      "name": "interview_a",
+      "old_path": "old_media/interview_a.mov",
+      "status": "relinked",
+      "new_path": "testdata/media/archive/interview_a_master.mov",
+      "confidence": 1,
+      "effects": [
+        "fx_m03_1",
+        "fx_m03_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/archive/interview_a_master.mov",
+          "confidence": 1,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 1,
+              "weight": 0.4,
+              "detail": "exact content match"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 8000ms, got 8000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/interview_a.mov",
+          "confidence": 0.4671875,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.46875,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.469"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 8000ms, got 8000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ambient_park_v2.mov",
+          "confidence": 0.3485758882342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.500"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 8000ms, got 7000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.31230116367357275,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.609375,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.609"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.049787068367863944,
+              "weight": 0.2,
+              "detail": "expected 8000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/intro.mp4",
+          "confidence": 0.2903818777777468,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.546875,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.547"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.01831563888873418,
+              "weight": 0.2,
+              "detail": "expected 8000ms, got 4000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m04",
+      "name": "broll_city",
+      "old_path": "old_media/broll_city.mov",
+      "status": "relinked",
+      "new_path": "testdata/media/broll_city_take2.mov",
+      "confidence": 1,
+      "effects": [
+        "fx_m04_1",
+        "fx_m04_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/broll_city_take2.mov",
+          "confidence": 1,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 1,
+              "weight": 0.4,
+              "detail": "exact content match"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 6000ms, got 6000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/broll_city.mov",
+          "confidence": 0.47890625,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 6000ms, got 6000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/scene_extra.mov",
+          "confidence": 0.41583738194252673,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.578125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.578"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 6000ms, got 6500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/healthy_b.mov",
+          "confidence": 0.27969824972477975,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.453125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.453"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.0820849986238988,
+              "weight": 0.2,
+              "detail": "expected 6000ms, got 3500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.20248213823428846,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 6000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 0,
+              "weight": 0.15,
+              "detail": "expected HEVC, got AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m05",
+      "name": "music_bed",
+      "old_path": "old_media/music_bed.mov",
+      "status": "blocked",
+      "reason": "no_candidate",
+      "effects": [
+        "fx_m05_1",
+        "fx_m05_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/music_bed.mov",
+          "confidence": 0.490625,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.562"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 12000ms, got 12000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.29080737639311094,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.562"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.0009118819655545162,
+              "weight": 0.2,
+              "detail": "expected 12000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ending_logo.mov",
+          "confidence": 0.2906496819608173,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.562"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.00012340980408667956,
+              "weight": 0.2,
+              "detail": "expected 12000ms, got 3000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/archive/interview_a_master.mov",
+          "confidence": 0.2825693777777468,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.01831563888873418,
+              "weight": 0.2,
+              "detail": "expected 12000ms, got 8000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ambient_park_v2.mov",
+          "confidence": 0.2802538393998171,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.006737946999085467,
+              "weight": 0.2,
+              "detail": "expected 12000ms, got 7000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m06",
+      "name": "product_shot",
+      "old_path": "old_media/product_shot.mov",
+      "status": "relinked",
+      "new_path": "testdata/media/footage/product_shot.mov",
+      "confidence": 1,
+      "effects": [
+        "fx_m06_1",
+        "fx_m06_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 1,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 1,
+              "weight": 0.4,
+              "detail": "exact content match"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 5000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/intro.mp4",
+          "confidence": 0.3798258882342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.625"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 5000ms, got 4000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/archive/interview_a_master.mov",
+          "confidence": 0.31230116367357275,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.609375,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.609"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.049787068367863944,
+              "weight": 0.2,
+              "detail": "expected 5000ms, got 8000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ambient_park_v2.mov",
+          "confidence": 0.30597330664732253,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.1353352832366127,
+              "weight": 0.2,
+              "detail": "expected 5000ms, got 7000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ending_logo.mov",
+          "confidence": 0.30206705664732253,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.500"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.1353352832366127,
+              "weight": 0.2,
+              "detail": "expected 5000ms, got 3000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m07",
+      "name": "ambient_park",
+      "old_path": "old_media/ambient_park.mov",
+      "status": "relinked",
+      "new_path": "testdata/media/ambient_park_v2.mov",
+      "confidence": 1,
+      "effects": [
+        "fx_m07_1",
+        "fx_m07_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/ambient_park_v2.mov",
+          "confidence": 1,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 1,
+              "weight": 0.4,
+              "detail": "exact content match"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 7000ms, got 7000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/interview_a.mov",
+          "confidence": 0.3720133882342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.59375,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.594"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 7000ms, got 8000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/archive/interview_a_master.mov",
+          "confidence": 0.3485758882342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.500"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 7000ms, got 8000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.30597330664732253,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.1353352832366127,
+              "weight": 0.2,
+              "detail": "expected 7000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ending_logo.mov",
+          "confidence": 0.2981943777777468,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.578125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.578"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.01831563888873418,
+              "weight": 0.2,
+              "detail": "expected 7000ms, got 3000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m08",
+      "name": "ending_logo",
+      "old_path": "old_media/ending_logo.mov",
+      "status": "blocked",
+      "reason": "low_confidence",
+      "effects": [
+        "fx_m08_1",
+        "fx_m08_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/ending_logo.mov",
+          "confidence": 0.6,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 3000ms, got 3000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/healthy_a.mov",
+          "confidence": 0.39630613194252673,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.500"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 3000ms, got 2500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/logo.mkv",
+          "confidence": 0.3602946382342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.546875,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.547"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 3000ms, got 2000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/intro.mp4",
+          "confidence": 0.3563883882342884,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.53125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.531"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.36787944117144233,
+              "weight": 0.2,
+              "detail": "expected 3000ms, got 4000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.30206705664732253,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.500"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.1353352832366127,
+              "weight": 0.2,
+              "detail": "expected 3000ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m09",
+      "name": "backup_take",
+      "old_path": "old_media/backup_take.mov",
+      "status": "blocked",
+      "reason": "no_candidate",
+      "effects": [
+        "fx_m09_1",
+        "fx_m09_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/footage/product_shot.mov",
+          "confidence": 0.39239988194252673,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.484375,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.484"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 4500ms, got 5000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/intro.mp4",
+          "confidence": 0.38458738194252673,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.453125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.453"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 4500ms, got 4000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/logo.mkv",
+          "confidence": 0.31485449972477975,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.59375,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.594"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.0820849986238988,
+              "weight": 0.2,
+              "detail": "expected 4500ms, got 2000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/healthy_a.mov",
+          "confidence": 0.30597330664732253,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.515625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.516"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.1353352832366127,
+              "weight": 0.2,
+              "detail": "expected 4500ms, got 2500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ending_logo.mov",
+          "confidence": 0.292282282029686,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.390625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.391"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.22313016014842982,
+              "weight": 0.2,
+              "detail": "expected 4500ms, got 3000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    },
+    {
+      "media_id": "m10",
+      "name": "extra_scene",
+      "old_path": "old_media/extra_scene.mov",
+      "status": "relinked",
+      "new_path": "testdata/media/scene_extra.mov",
+      "confidence": 1,
+      "effects": [
+        "fx_m10_1",
+        "fx_m10_2"
+      ],
+      "candidates": [
+        {
+          "path": "testdata/media/scene_extra.mov",
+          "confidence": 1,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 1,
+              "weight": 0.4,
+              "detail": "exact content match"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 1,
+              "weight": 0.25,
+              "detail": "hamming similarity 1.000"
+            },
+            {
+              "dimension": "duration",
+              "score": 1,
+              "weight": 0.2,
+              "detail": "expected 6500ms, got 6500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": false
+        },
+        {
+          "path": "testdata/media/broll_city_take2.mov",
+          "confidence": 0.41583738194252673,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.578125,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.578"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 6500ms, got 6000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/broll_city.mov",
+          "confidence": 0.38849363194252673,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.46875,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.469"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 6500ms, got 6000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/healthy_b.mov",
+          "confidence": 0.30058241367357275,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.5625,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.562"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.049787068367863944,
+              "weight": 0.2,
+              "detail": "expected 6500ms, got 3500ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 1,
+              "weight": 0.15,
+              "detail": "codec HEVC"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        },
+        {
+          "path": "testdata/media/ambient_park_v2.mov",
+          "confidence": 0.2267748819425267,
+          "evidence": [
+            {
+              "dimension": "frame_hash",
+              "score": 0,
+              "weight": 0.4,
+              "detail": "frame payload differs"
+            },
+            {
+              "dimension": "audio_fingerprint",
+              "score": 0.421875,
+              "weight": 0.25,
+              "detail": "hamming similarity 0.422"
+            },
+            {
+              "dimension": "duration",
+              "score": 0.6065306597126334,
+              "weight": 0.2,
+              "detail": "expected 6500ms, got 7000ms"
+            },
+            {
+              "dimension": "codec",
+              "score": 0,
+              "weight": 0.15,
+              "detail": "expected HEVC, got AVC1"
+            }
+          ],
+          "rejected": true,
+          "reject_reason": "content differs (frame hash and audio fingerprint mismatch)"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "media_ids_intact": true,
+    "effects_resolve": true,
+    "relinked_hash_ok": true,
+    "effect_media_pairs": [
+      "fx_m01_1 -\u003e m01 (testdata/media/intro.mp4)",
+      "fx_m01_2 -\u003e m01 (testdata/media/intro.mp4)",
+      "fx_m02_1 -\u003e m02 (testdata/media/logo.mkv)",
+      "fx_m02_2 -\u003e m02 (testdata/media/logo.mkv)",
+      "fx_m03_1 -\u003e m03 (testdata/media/archive/interview_a_master.mov)",
+      "fx_m03_2 -\u003e m03 (testdata/media/archive/interview_a_master.mov)",
+      "fx_m04_1 -\u003e m04 (testdata/media/broll_city_take2.mov)",
+      "fx_m04_2 -\u003e m04 (testdata/media/broll_city_take2.mov)",
+      "fx_m05_1 -\u003e m05 (old_media/music_bed.mov)",
+      "fx_m05_2 -\u003e m05 (old_media/music_bed.mov)",
+      "fx_m06_1 -\u003e m06 (testdata/media/footage/product_shot.mov)",
+      "fx_m06_2 -\u003e m06 (testdata/media/footage/product_shot.mov)",
+      "fx_m07_1 -\u003e m07 (testdata/media/ambient_park_v2.mov)",
+      "fx_m07_2 -\u003e m07 (testdata/media/ambient_park_v2.mov)",
+      "fx_m08_1 -\u003e m08 (old_media/ending_logo.mov)",
+      "fx_m08_2 -\u003e m08 (old_media/ending_logo.mov)",
+      "fx_m09_1 -\u003e m09 (old_media/backup_take.mov)",
+      "fx_m09_2 -\u003e m09 (old_media/backup_take.mov)",
+      "fx_m10_1 -\u003e m10 (testdata/media/scene_extra.mov)",
+      "fx_m10_2 -\u003e m10 (testdata/media/scene_extra.mov)",
+      "fx_m11_1 -\u003e m11 (healthy_a.mov)",
+      "fx_m12_1 -\u003e m12 (healthy_b.mov)"
+    ]
+  }
+}

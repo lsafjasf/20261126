@@ -1,0 +1,298 @@
+relink report for project "migration-demo"
+media root: testdata/media
+assets: 12 total, 2 present, 10 missing -> 7 relinked, 3 blocked
+
+[RELINKED] m01 (intro)
+    old_media/intro.mov -> testdata/media/intro.mp4 (confidence 1.000)
+    effects: fx_m01_1, fx_m01_2
+    * candidate testdata/media/intro.mp4                 confidence 1.000
+        frame_hash         score 1.000 weight 0.40  exact content match
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 4000ms, got 4000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/footage/product_shot.mov  confidence 0.380 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.625 weight 0.25  hamming similarity 0.625
+        duration           score 0.368 weight 0.20  expected 4000ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ending_logo.mov           confidence 0.356 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.531 weight 0.25  hamming similarity 0.531
+        duration           score 0.368 weight 0.20  expected 4000ms, got 3000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/healthy_a.mov             confidence 0.320 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.500 weight 0.25  hamming similarity 0.500
+        duration           score 0.223 weight 0.20  expected 4000ms, got 2500ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/logo.mkv                  confidence 0.298 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.484 weight 0.25  hamming similarity 0.484
+        duration           score 0.135 weight 0.20  expected 4000ms, got 2000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[RELINKED] m02 (logo)
+    old_media/logo.mov -> testdata/media/logo.mkv (confidence 1.000)
+    effects: fx_m02_1, fx_m02_2
+    * candidate testdata/media/logo.mkv                  confidence 1.000
+        frame_hash         score 1.000 weight 0.40  exact content match
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 2000ms, got 2000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/healthy_a.mov             confidence 0.385 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.453 weight 0.25  hamming similarity 0.453
+        duration           score 0.607 weight 0.20  expected 2000ms, got 2500ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ending_logo.mov           confidence 0.360 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.547 weight 0.25  hamming similarity 0.547
+        duration           score 0.368 weight 0.20  expected 2000ms, got 3000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/intro.mp4                 confidence 0.298 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.484 weight 0.25  hamming similarity 0.484
+        duration           score 0.135 weight 0.20  expected 2000ms, got 4000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/footage/product_shot.mov  confidence 0.289 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 0.050 weight 0.20  expected 2000ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[RELINKED] m03 (interview_a)
+    old_media/interview_a.mov -> testdata/media/archive/interview_a_master.mov (confidence 1.000)
+    effects: fx_m03_1, fx_m03_2
+    * candidate testdata/media/archive/interview_a_master.mov confidence 1.000
+        frame_hash         score 1.000 weight 0.40  exact content match
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 8000ms, got 8000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/interview_a.mov           confidence 0.467 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.469 weight 0.25  hamming similarity 0.469
+        duration           score 1.000 weight 0.20  expected 8000ms, got 8000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ambient_park_v2.mov       confidence 0.349 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.500 weight 0.25  hamming similarity 0.500
+        duration           score 0.368 weight 0.20  expected 8000ms, got 7000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/footage/product_shot.mov  confidence 0.312 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.609 weight 0.25  hamming similarity 0.609
+        duration           score 0.050 weight 0.20  expected 8000ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/intro.mp4                 confidence 0.290 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.547 weight 0.25  hamming similarity 0.547
+        duration           score 0.018 weight 0.20  expected 8000ms, got 4000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[RELINKED] m04 (broll_city)
+    old_media/broll_city.mov -> testdata/media/broll_city_take2.mov (confidence 1.000)
+    effects: fx_m04_1, fx_m04_2
+    * candidate testdata/media/broll_city_take2.mov      confidence 1.000
+        frame_hash         score 1.000 weight 0.40  exact content match
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 6000ms, got 6000ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/broll_city.mov            confidence 0.479 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 1.000 weight 0.20  expected 6000ms, got 6000ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/scene_extra.mov           confidence 0.416 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.578 weight 0.25  hamming similarity 0.578
+        duration           score 0.607 weight 0.20  expected 6000ms, got 6500ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/healthy_b.mov             confidence 0.280 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.453 weight 0.25  hamming similarity 0.453
+        duration           score 0.082 weight 0.20  expected 6000ms, got 3500ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/footage/product_shot.mov  confidence 0.202 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 0.368 weight 0.20  expected 6000ms, got 5000ms
+        codec              score 0.000 weight 0.15  expected HEVC, got AVC1
+
+[BLOCKED ] m05 (music_bed) reason=no_candidate
+    recorded path: old_media/music_bed.mov
+    effects: fx_m05_1, fx_m05_2
+      candidate testdata/media/music_bed.mov             confidence 0.491 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.562 weight 0.25  hamming similarity 0.562
+        duration           score 1.000 weight 0.20  expected 12000ms, got 12000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/footage/product_shot.mov  confidence 0.291 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.562 weight 0.25  hamming similarity 0.562
+        duration           score 0.001 weight 0.20  expected 12000ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ending_logo.mov           confidence 0.291 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.562 weight 0.25  hamming similarity 0.562
+        duration           score 0.000 weight 0.20  expected 12000ms, got 3000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/archive/interview_a_master.mov confidence 0.283 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 0.018 weight 0.20  expected 12000ms, got 8000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ambient_park_v2.mov       confidence 0.280 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 0.007 weight 0.20  expected 12000ms, got 7000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[RELINKED] m06 (product_shot)
+    old_media/product_shot.mov -> testdata/media/footage/product_shot.mov (confidence 1.000)
+    effects: fx_m06_1, fx_m06_2
+    * candidate testdata/media/footage/product_shot.mov  confidence 1.000
+        frame_hash         score 1.000 weight 0.40  exact content match
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 5000ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/intro.mp4                 confidence 0.380 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.625 weight 0.25  hamming similarity 0.625
+        duration           score 0.368 weight 0.20  expected 5000ms, got 4000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/archive/interview_a_master.mov confidence 0.312 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.609 weight 0.25  hamming similarity 0.609
+        duration           score 0.050 weight 0.20  expected 5000ms, got 8000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ambient_park_v2.mov       confidence 0.306 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 0.135 weight 0.20  expected 5000ms, got 7000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ending_logo.mov           confidence 0.302 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.500 weight 0.25  hamming similarity 0.500
+        duration           score 0.135 weight 0.20  expected 5000ms, got 3000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[RELINKED] m07 (ambient_park)
+    old_media/ambient_park.mov -> testdata/media/ambient_park_v2.mov (confidence 1.000)
+    effects: fx_m07_1, fx_m07_2
+    * candidate testdata/media/ambient_park_v2.mov       confidence 1.000
+        frame_hash         score 1.000 weight 0.40  exact content match
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 7000ms, got 7000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/interview_a.mov           confidence 0.372 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.594 weight 0.25  hamming similarity 0.594
+        duration           score 0.368 weight 0.20  expected 7000ms, got 8000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/archive/interview_a_master.mov confidence 0.349 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.500 weight 0.25  hamming similarity 0.500
+        duration           score 0.368 weight 0.20  expected 7000ms, got 8000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/footage/product_shot.mov  confidence 0.306 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 0.135 weight 0.20  expected 7000ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ending_logo.mov           confidence 0.298 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.578 weight 0.25  hamming similarity 0.578
+        duration           score 0.018 weight 0.20  expected 7000ms, got 3000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[BLOCKED ] m08 (ending_logo) reason=low_confidence
+    recorded path: old_media/ending_logo.mov
+    effects: fx_m08_1, fx_m08_2
+      candidate testdata/media/ending_logo.mov           confidence 0.600
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 3000ms, got 3000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/healthy_a.mov             confidence 0.396 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.500 weight 0.25  hamming similarity 0.500
+        duration           score 0.607 weight 0.20  expected 3000ms, got 2500ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/logo.mkv                  confidence 0.360 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.547 weight 0.25  hamming similarity 0.547
+        duration           score 0.368 weight 0.20  expected 3000ms, got 2000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/intro.mp4                 confidence 0.356 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.531 weight 0.25  hamming similarity 0.531
+        duration           score 0.368 weight 0.20  expected 3000ms, got 4000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/footage/product_shot.mov  confidence 0.302 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.500 weight 0.25  hamming similarity 0.500
+        duration           score 0.135 weight 0.20  expected 3000ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[BLOCKED ] m09 (backup_take) reason=no_candidate
+    recorded path: old_media/backup_take.mov
+    effects: fx_m09_1, fx_m09_2
+      candidate testdata/media/footage/product_shot.mov  confidence 0.392 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.484 weight 0.25  hamming similarity 0.484
+        duration           score 0.607 weight 0.20  expected 4500ms, got 5000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/intro.mp4                 confidence 0.385 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.453 weight 0.25  hamming similarity 0.453
+        duration           score 0.607 weight 0.20  expected 4500ms, got 4000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/logo.mkv                  confidence 0.315 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.594 weight 0.25  hamming similarity 0.594
+        duration           score 0.082 weight 0.20  expected 4500ms, got 2000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/healthy_a.mov             confidence 0.306 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.516 weight 0.25  hamming similarity 0.516
+        duration           score 0.135 weight 0.20  expected 4500ms, got 2500ms
+        codec              score 1.000 weight 0.15  codec AVC1
+      candidate testdata/media/ending_logo.mov           confidence 0.292 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.391 weight 0.25  hamming similarity 0.391
+        duration           score 0.223 weight 0.20  expected 4500ms, got 3000ms
+        codec              score 1.000 weight 0.15  codec AVC1
+
+[RELINKED] m10 (extra_scene)
+    old_media/extra_scene.mov -> testdata/media/scene_extra.mov (confidence 1.000)
+    effects: fx_m10_1, fx_m10_2
+    * candidate testdata/media/scene_extra.mov           confidence 1.000
+        frame_hash         score 1.000 weight 0.40  exact content match
+        audio_fingerprint  score 1.000 weight 0.25  hamming similarity 1.000
+        duration           score 1.000 weight 0.20  expected 6500ms, got 6500ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/broll_city_take2.mov      confidence 0.416 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.578 weight 0.25  hamming similarity 0.578
+        duration           score 0.607 weight 0.20  expected 6500ms, got 6000ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/broll_city.mov            confidence 0.388 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.469 weight 0.25  hamming similarity 0.469
+        duration           score 0.607 weight 0.20  expected 6500ms, got 6000ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/healthy_b.mov             confidence 0.301 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.562 weight 0.25  hamming similarity 0.562
+        duration           score 0.050 weight 0.20  expected 6500ms, got 3500ms
+        codec              score 1.000 weight 0.15  codec HEVC
+      candidate testdata/media/ambient_park_v2.mov       confidence 0.227 REJECTED: content differs (frame hash and audio fingerprint mismatch)
+        frame_hash         score 0.000 weight 0.40  frame payload differs
+        audio_fingerprint  score 0.422 weight 0.25  hamming similarity 0.422
+        duration           score 0.607 weight 0.20  expected 6500ms, got 7000ms
+        codec              score 0.000 weight 0.15  expected HEVC, got AVC1
+
+traceability verification:
+    media ids intact:  true
+    effects resolve:   true
+    relinked hash ok:  true

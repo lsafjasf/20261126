@@ -1,0 +1,327 @@
+{
+  "project": "migration-demo",
+  "media": [
+    {
+      "id": "m01",
+      "name": "intro",
+      "path": "testdata/media/intro.mp4",
+      "codec": "AVC1",
+      "duration_ms": 4000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 96,
+      "frame_hash": "4add9bbbc7123c945639540cb6a73f9636f4994b6b1c0dc81d8d0278049e84f8",
+      "audio_fingerprint": "98a397b0953cb164"
+    },
+    {
+      "id": "m02",
+      "name": "logo",
+      "path": "testdata/media/logo.mkv",
+      "codec": "AVC1",
+      "duration_ms": 2000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 48,
+      "frame_hash": "de314750fd95f880f93c77b59565340a7e89320ae3f598ed3c4c394f3bf538e2",
+      "audio_fingerprint": "69eba4896f0430db"
+    },
+    {
+      "id": "m03",
+      "name": "interview_a",
+      "path": "testdata/media/archive/interview_a_master.mov",
+      "codec": "AVC1",
+      "duration_ms": 8000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 192,
+      "frame_hash": "53022b551ef9e53921595db2749d20d539b80b8d1944ca52991bbabb407b411e",
+      "audio_fingerprint": "8786d20039350b5d"
+    },
+    {
+      "id": "m04",
+      "name": "broll_city",
+      "path": "testdata/media/broll_city_take2.mov",
+      "codec": "HEVC",
+      "duration_ms": 6000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 144,
+      "frame_hash": "8415503fd1751516bb4c6a97650b7fbe6b0d22b2b6379b2925ed56c18eef70be",
+      "audio_fingerprint": "6b4c76c604a22380"
+    },
+    {
+      "id": "m05",
+      "name": "music_bed",
+      "path": "old_media/music_bed.mov",
+      "codec": "AVC1",
+      "duration_ms": 12000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 288,
+      "frame_hash": "79c3a3ce6c0ec206ad7b86152e20babbb0878b48998af014ffc5b3204edc6c63",
+      "audio_fingerprint": "e50083c3eb6350e4"
+    },
+    {
+      "id": "m06",
+      "name": "product_shot",
+      "path": "testdata/media/footage/product_shot.mov",
+      "codec": "AVC1",
+      "duration_ms": 5000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 120,
+      "frame_hash": "0fea306252698d47258ed221d12f3cdd495f90a0f0f79a5524ab48d3a192bd4c",
+      "audio_fingerprint": "dd80a0b2b1a42814"
+    },
+    {
+      "id": "m07",
+      "name": "ambient_park",
+      "path": "testdata/media/ambient_park_v2.mov",
+      "codec": "AVC1",
+      "duration_ms": 7000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 168,
+      "frame_hash": "34bfae3a8a9a682054e4b6bde2514ceecdbc78dfcd40a27613533cec48a79f10",
+      "audio_fingerprint": "80ac885e2c76eda4"
+    },
+    {
+      "id": "m08",
+      "name": "ending_logo",
+      "path": "old_media/ending_logo.mov",
+      "codec": "AVC1",
+      "duration_ms": 3000,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 72,
+      "frame_hash": "dc190f0ded8c445bd9c43f543a39d885059543e0fba37177387c5543aa139113",
+      "audio_fingerprint": "c6c9830b8c369403"
+    },
+    {
+      "id": "m09",
+      "name": "backup_take",
+      "path": "old_media/backup_take.mov",
+      "codec": "AVC1",
+      "duration_ms": 4500,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 108,
+      "frame_hash": "064f27454e84d00d9e89ccf9d167cc04e6d5456a1010c0b9c669801b46f9b22e",
+      "audio_fingerprint": "1ce6a86d62dc735f"
+    },
+    {
+      "id": "m10",
+      "name": "extra_scene",
+      "path": "testdata/media/scene_extra.mov",
+      "codec": "HEVC",
+      "duration_ms": 6500,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 156,
+      "frame_hash": "66f4590729ba14b8d4c670ba4e913a1e471470220a5e165db2ef5a967f0eb530",
+      "audio_fingerprint": "f37693c621484213"
+    },
+    {
+      "id": "m11",
+      "name": "healthy_a",
+      "path": "healthy_a.mov",
+      "codec": "AVC1",
+      "duration_ms": 2500,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 60,
+      "frame_hash": "65b4810727d36de38a03844de807f4fb1a113ed9efd156a01f26d8e561ee9ff6",
+      "audio_fingerprint": "389452554c75240e"
+    },
+    {
+      "id": "m12",
+      "name": "healthy_b",
+      "path": "healthy_b.mov",
+      "codec": "HEVC",
+      "duration_ms": 3500,
+      "fps_num": 24,
+      "fps_den": 1,
+      "frame_count": 84,
+      "frame_hash": "0b2cedfae8ceb8f640e47b29a9ad75d2460c98c191c7258e2e246ba8b61ad6a1",
+      "audio_fingerprint": "12280d54e5547e11"
+    }
+  ],
+  "effects": [
+    {
+      "id": "fx_m01_1",
+      "type": "color_grade",
+      "media_id": "m01",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m01_2",
+      "type": "transform",
+      "media_id": "m01",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m02_1",
+      "type": "transform",
+      "media_id": "m02",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m02_2",
+      "type": "speed_ramp",
+      "media_id": "m02",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m03_1",
+      "type": "speed_ramp",
+      "media_id": "m03",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m03_2",
+      "type": "blur",
+      "media_id": "m03",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m04_1",
+      "type": "blur",
+      "media_id": "m04",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m04_2",
+      "type": "audio_gain",
+      "media_id": "m04",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m05_1",
+      "type": "audio_gain",
+      "media_id": "m05",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m05_2",
+      "type": "color_grade",
+      "media_id": "m05",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m06_1",
+      "type": "color_grade",
+      "media_id": "m06",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m06_2",
+      "type": "transform",
+      "media_id": "m06",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m07_1",
+      "type": "transform",
+      "media_id": "m07",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m07_2",
+      "type": "speed_ramp",
+      "media_id": "m07",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m08_1",
+      "type": "speed_ramp",
+      "media_id": "m08",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m08_2",
+      "type": "blur",
+      "media_id": "m08",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m09_1",
+      "type": "blur",
+      "media_id": "m09",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m09_2",
+      "type": "audio_gain",
+      "media_id": "m09",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m10_1",
+      "type": "audio_gain",
+      "media_id": "m10",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m10_2",
+      "type": "color_grade",
+      "media_id": "m10",
+      "params": {
+        "amount": 0.2
+      }
+    },
+    {
+      "id": "fx_m11_1",
+      "type": "color_grade",
+      "media_id": "m11",
+      "params": {
+        "amount": 0.1
+      }
+    },
+    {
+      "id": "fx_m12_1",
+      "type": "transform",
+      "media_id": "m12",
+      "params": {
+        "amount": 0.1
+      }
+    }
+  ]
+}
