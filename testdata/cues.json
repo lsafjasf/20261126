@@ -1,0 +1,188 @@
+{
+  "schema": "cuemap.fixtures/v1",
+  "generator": "go run ./cmd/genfixtures (stdlib only)",
+  "fixtures": [
+    {
+      "name": "arabic-combining",
+      "cue": {
+        "id": "cue-arabic-combining",
+        "end_ms": 2500,
+        "language": "ar",
+        "text": "مَرْحَبًا",
+        "raw": "مَرْحَبًا"
+      },
+      "options": {
+        "mode": 1,
+        "metrics": {
+          "base_size": 0,
+          "ruby_size": 0,
+          "ruby_gap": 0,
+          "char_spacing": 0,
+          "line_spacing": 0,
+          "padding": 0
+        }
+      },
+      "want_ok": true
+    },
+    {
+      "name": "trilingual-html-ruby-vertical",
+      "cue": {
+        "id": "cue-trilingual-ruby",
+        "index": 1,
+        "start_ms": 1000,
+        "end_ms": 5000,
+        "language": "zh-ar-ja",
+        "text": "東亜と中文：مرحبا 123",
+        "raw": "\u003cruby\u003e東\u003crp\u003e(\u003c/rp\u003e\u003crt\u003eとう\u003c/rt\u003e\u003crp\u003e)\u003c/rp\u003e\u003c/ruby\u003e亜と中文：مرحبا 123",
+        "ruby": [
+          {
+            "start_rune": 0,
+            "end_rune": 1,
+            "base": "東",
+            "text": "とう"
+          }
+        ]
+      },
+      "options": {
+        "mode": 2,
+        "metrics": {
+          "base_size": 0,
+          "ruby_size": 0,
+          "ruby_gap": 0,
+          "char_spacing": 0,
+          "line_spacing": 0,
+          "padding": 0
+        }
+      },
+      "want_ok": true
+    },
+    {
+      "name": "aozora-ruby-vertical",
+      "cue": {
+        "id": "cue-aozora-vertical",
+        "index": 2,
+        "start_ms": 6000,
+        "end_ms": 9000,
+        "text": "長安と龍",
+        "raw": "｜長安《ちょうあん》と龍",
+        "ruby": [
+          {
+            "start_rune": 0,
+            "end_rune": 2,
+            "base": "長安",
+            "text": "ちょうあん"
+          }
+        ]
+      },
+      "options": {
+        "mode": 2,
+        "metrics": {
+          "base_size": 0,
+          "ruby_size": 0,
+          "ruby_gap": 0,
+          "char_spacing": 0,
+          "line_spacing": 0,
+          "padding": 0
+        }
+      },
+      "want_ok": true
+    },
+    {
+      "name": "vertical-column-spacing",
+      "cue": {
+        "id": "cue-vertical-column-spacing",
+        "index": 3,
+        "start_ms": 9200,
+        "end_ms": 11200,
+        "text": "中文竖排\n東京",
+        "raw": "中文竖排\\N東京（とうきょう ruby attached to the left column）",
+        "mode": 2,
+        "ruby": [
+          {
+            "start_rune": 5,
+            "end_rune": 6,
+            "base": "東",
+            "text": "とう"
+          },
+          {
+            "start_rune": 6,
+            "end_rune": 7,
+            "base": "京",
+            "text": "きょう"
+          }
+        ]
+      },
+      "options": {
+        "mode": 2,
+        "metrics": {
+          "base_size": 0,
+          "ruby_size": 0,
+          "ruby_gap": 0,
+          "char_spacing": 0,
+          "line_spacing": 0,
+          "padding": 0
+        }
+      },
+      "want_ok": true
+    },
+    {
+      "name": "fallback-overlapping-ruby",
+      "cue": {
+        "id": "cue-fallback-overlap",
+        "index": 4,
+        "start_ms": 11500,
+        "end_ms": 13000,
+        "text": "覆蓋",
+        "raw": "RAW: overlapping ruby must return to this cue",
+        "ruby": [
+          {
+            "start_rune": 0,
+            "end_rune": 1,
+            "text": "ふく"
+          },
+          {
+            "start_rune": 0,
+            "end_rune": 2,
+            "text": "がい"
+          }
+        ]
+      },
+      "options": {
+        "mode": 2,
+        "metrics": {
+          "base_size": 0,
+          "ruby_size": 0,
+          "ruby_gap": 0,
+          "char_spacing": 0,
+          "line_spacing": 0,
+          "padding": 0
+        }
+      },
+      "want_ok": false
+    },
+    {
+      "name": "fallback-bounds",
+      "cue": {
+        "id": "cue-fallback-bounds",
+        "index": 5,
+        "start_ms": 13500,
+        "end_ms": 15000,
+        "text": "竖排超高",
+        "raw": "RAW: tight max height must refer back here"
+      },
+      "options": {
+        "mode": 2,
+        "metrics": {
+          "base_size": 24,
+          "ruby_size": 12,
+          "ruby_gap": 4,
+          "char_spacing": 0,
+          "line_spacing": 10,
+          "padding": 8,
+          "max_height": 1
+        }
+      },
+      "want_ok": false
+    }
+  ]
+}
