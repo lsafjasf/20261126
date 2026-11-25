@@ -1,0 +1,41 @@
+WEBVTT - 竖屏无解组合：四条长 cue 同时出现，拆行/延长候选
+
+REGION
+id:r1
+width:88%
+regionanchor:50%,100%
+viewportanchor:50%,88%
+priority:9
+
+REGION
+id:r2
+width:88%
+regionanchor:50%,100%
+viewportanchor:50%,88%
+priority:6
+
+REGION
+id:r3
+width:88%
+regionanchor:50%,100%
+viewportanchor:50%,88%
+priority:3
+
+REGION
+id:r4
+width:88%
+regionanchor:50%,100%
+viewportanchor:50%,88%
+priority:1
+
+00:00:01.000 --> 00:00:11.000 region:r1 align:center
+高优先级字幕：四条同时出现便会超出安全画布高度。
+
+00:00:02.000 --> 00:00:10.000 region:r2 align:center
+第二条字幕：按时间阶段统计同时活动的全部字幕块。
+
+00:00:02.500 --> 00:00:09.500 region:r3 align:center
+第三条中优先级：行数越多块越高，画布不足即判定无解。
+
+00:00:03.000 --> 00:00:09.000 region:r4 align:center
+最低优先级字幕：它会被优先选作拆行或错峰延长目标。

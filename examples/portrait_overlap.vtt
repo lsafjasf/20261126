@@ -1,0 +1,40 @@
+WEBVTT - 竖屏切换后多 region 遮挡（可重排修复）
+
+REGION
+id:host
+width:72%
+lines:2
+regionanchor:50%,0%
+viewportanchor:50%,32%
+priority:5
+
+REGION
+id:guest
+width:72%
+lines:2
+regionanchor:50%,100%
+viewportanchor:50%,66%
+priority:8
+
+REGION
+id:ticker
+width:80%
+lines:2
+regionanchor:0%,100%
+viewportanchor:10%,92%
+priority:3
+
+00:00:01.000 --> 00:00:06.000 region:host align:center
+主持人：欢迎来到今晚的现场直播。
+
+00:00:02.000 --> 00:00:07.000 region:guest align:center
+嘉宾：谢谢邀请，这会影响到每一个人。
+
+00:00:03.000 --> 00:00:08.000 region:ticker align:start
+快讯：竖屏后 region 互相遮挡，文字未越界。
+
+00:00:09.000 --> 00:00:12.500 region:host align:center
+稍后还有更多分析，不要走开。
+
+00:00:10.000 --> 00:00:13.000 region:guest align:center
+广告之后马上回来。
