@@ -1,0 +1,79 @@
+{
+  "media": [
+    {
+      "id": "p1",
+      "path": "proxies/shot01_proxy.mov",
+      "kind": "proxy",
+      "duration_ms": 8000,
+      "frame_count": 200,
+      "fps_num": 25,
+      "fps_den": 1,
+      "width": 960,
+      "height": 540,
+      "first_frame_hash": "3a7c91e24f08b6d1",
+      "audio_fingerprint": "9f2c41aa07b3d5e811cc6a9042f7e0b1",
+      "codec": "h264",
+      "file_size_bytes": 4200000
+    },
+    {
+      "id": "p2",
+      "path": "proxies/shot02_proxy.mov",
+      "kind": "proxy",
+      "duration_ms": 12000,
+      "frame_count": 300,
+      "fps_num": 25,
+      "fps_den": 1,
+      "width": 960,
+      "height": 540,
+      "first_frame_hash": "77aa10c3d5e902f4",
+      "audio_fingerprint": "01ab23cd45ef67889a0b1c2d3e4f5061",
+      "codec": "h264",
+      "file_size_bytes": 6100000
+    },
+    {
+      "id": "o1",
+      "path": "originals/shot01.mov",
+      "kind": "original",
+      "duration_ms": 8000,
+      "frame_count": 200,
+      "fps_num": 25,
+      "fps_den": 1,
+      "width": 1920,
+      "height": 1080,
+      "first_frame_hash": "c85f03a1d97b4e26",
+      "audio_fingerprint": "8f0c51ab17a3d5e811cc6a9042f7e0b1",
+      "codec": "prores",
+      "file_size_bytes": 240000000
+    },
+    {
+      "id": "o2",
+      "path": "originals/shot02.mov",
+      "kind": "original",
+      "duration_ms": 12000,
+      "frame_count": 300,
+      "fps_num": 25,
+      "fps_den": 1,
+      "width": 1920,
+      "height": 1080,
+      "first_frame_hash": "e41b78d02c6a5193",
+      "audio_fingerprint": "11ab23cd45ef67889a0b1c2d3e4f5061",
+      "codec": "prores",
+      "file_size_bytes": 355000000
+    },
+    {
+      "id": "o3",
+      "path": "originals/shot03_alt.mov",
+      "kind": "original",
+      "duration_ms": 8000,
+      "frame_count": 200,
+      "fps_num": 25,
+      "fps_den": 1,
+      "width": 1920,
+      "height": 1080,
+      "first_frame_hash": "0000ffff5a5aa5a5",
+      "audio_fingerprint": "deadbeef00112233445566778899aabb",
+      "codec": "prores",
+      "file_size_bytes": 238000000
+    }
+  ]
+}
