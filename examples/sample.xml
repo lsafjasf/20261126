@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="en"
+    xmlns="http://www.w3.org/ns/ttml"
+    xmlns:smpte="http://www.smpte-ra.org/schemas/2052-1/2010/smpte-tt"
+    xmlns:tts="http://www.w3.org/ns/ttml#styling">
+  <head>
+    <layout>
+      <region xml:id="rBottom" tts:origin="10% 80%"
+              smpte:backgroundImage="#sub1 #sub2"/>
+    </layout>
+    <smpte:image xml:id="sub1" smpte:imageType="png" smpte:encoding="Base64">iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAHElEQVR4nGJiIADACv4zMPyHCZAMiLNigBUABgDIEgINMuo8XwAAAABJRU5ErkJggg==</smpte:image>
+  </head>
+  <body>
+    <div>
+      <p region="rBottom" begin="00:00:01" end="00:00:03">Subtitle one</p>
+      <p smpte:backgroundImage="#gone" begin="1s" end="2s">Missing image text</p>
+    </div>
+  </body>
+</tt>
