@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fcpxml version="1.10">
+  <resources>
+    <effect id="r1" name="Blur" effectID="com.example.blur"/>
+  </resources>
+  <clip>
+    <filter-video ref="r1">
+      <param name="Amount" key="amount">
+        <data key="effectData">AQIDBA==</data>
+      </param>
+    </filter-video>
+  </clip>
+</fcpxml>

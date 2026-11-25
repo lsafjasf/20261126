@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fcpxml version="1.10">
+  <resources>
+    <effect id="r1" name="Blur" effectID="com.example.blur"/>
+    <effect id="r2" name="Glow" effectID="com.example.glow">
+      <parameter>
+        <name>Amount</name>
+        <parameterid>amount</parameterid>
+        <value>
+          <horiz>2.0</horiz>
+          <vert>3.0</vert>
+        </value>
+      </parameter>
+    </effect>
+  </resources>
+  <library>
+    <event name="Example">
+      <project name="Effect collision">
+        <sequence>
+          <spine>
+            <clip>
+              <filter-video ref="r1">
+                <param name="Amount" key="amount" value="0.25"/>
+                <param name="Amount" key="amount">
+                  <param name="Center" key="center" value="0.5"/>
+                </param>
+              </filter-video>
+              <filter-video ref="r2">
+                <param name="Amount" key="amount" value="1.5"/>
+              </filter-video>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
